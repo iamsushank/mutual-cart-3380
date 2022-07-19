@@ -1,0 +1,3 @@
+Header html is sample for testing kind of master copy.
+Use:- <div id="navbar"></div> and paste it inside of it.
+Css copy from style tag.
