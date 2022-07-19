@@ -12,4 +12,5 @@ let navbar = ()=>{
     <p class="link"><a href="">Sign in</a></p>
     <button id="btn1" >Get My Hours Free</button>
   </div>`
-}
+};
+export default navbar;
