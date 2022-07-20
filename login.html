@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style/login.css" />
+    <title>Signin - My Hours</title>
+  </head>
+  <body>
+    <fieldset id="signup_fieldset">
+      <div id="padd_cont">
+        <div class="container_form">
+          <form action="" class="forms_all" id="form_1">
+            <a href="">
+              <img
+                src="https://allhoursproductb0b1.blob.core.windows.net/static-files/myhours_logo_icon.svg"
+                alt="myhours logo"
+                id="myhours_logo"
+            /></a>
+
+            <h2 id="welcome_text">Sign in</h2>
+
+            <!-- email -->
+            <div class="details_label">
+              <span class="details" id="email">EMAIL</span>
+              <input type="text" id="ip_em" class="input_box" placeholder="Email" required />
+            </div>
+
+            <!-- password -->
+            <div class="details_label">
+              <span class="details" id="signup_password">PASSWORD</span>
+              <input
+                type="password"
+                id="ip_ps"
+                class="input_box"
+                placeholder="Password"
+                required
+              />
+            </div>
+
+            <!-- next button -->
+            <div>
+                <span id="signup-p1-btn">
+                    <button id="next_button" onclick="signIn(event)">Sign in</button><a id="rst_ps" href="">Rest Password</a>
+                </span>
+            </div>
+            <p id="hr_line_login"></p>
+            <!-- terms -->
+            <p id="terms"><a href="./signup.html">New to My Hours? Sign up</a></p>
+
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>
+<script src="./script/login.js"></script>
