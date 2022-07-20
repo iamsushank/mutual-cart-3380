@@ -4,7 +4,7 @@
         height: 120px;
         display: flex;
         line-height: 23px;
-        position: fixed; 
+        position:relative; 
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       }
       #navlogo {
