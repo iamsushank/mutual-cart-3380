@@ -1,3 +1,6 @@
-Header html is sample for testing kind of master copy.
-Use:- <div id="navbar"></div> and paste it inside of it.
+Header html is a master copy of navbar, kind of master copy.
+Use:- <div id="navbar"> import here navbar </div> and paste it inside of it.
 Css copy from style tag.
+
+For footer 
+create a div :- <div id="main-footer"> import here footer <div>
