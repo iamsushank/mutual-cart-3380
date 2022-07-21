@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  width: 84%;
+  height: 500px;
+  /* border: 1px solid red; */
+  margin-left: 15%;
+  display: block;
+}
+#date-picker {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  display: flex;
+}
+form {
+  width: 60%;
+  /* border: 2px solid greenyellow; */
+}
+h2 {
+  display: inline;
+}
+.fa {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+#wrapper {
+  width: 40%;
+  /* border: 2px solid sandybrown; */
+  display: flex;
+  gap: 10px;
+}
+#button-start {
+  width: 90px;
+  border: 2px solid red;
+  display: grid;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 20px;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-color: #29b850;
+  border-radius: 4px;
+  color: #29b850;
+  font-weight: 400;
+}
+#button-stop {
+  width: 90px;
+  border: 2px solid red;
+  display: grid;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 20px;
+  align-items: center;
+  background-color: white;
+  border-color: #e90707;
+  border-radius: 4px;
+  color: #e90707;
+  font-weight: 400;
+}
+#seconds {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+span {
+  content: "\2606";
+}
+#log-body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn-log {
+  background-color: rgb(246, 246, 246);
+  font-family: sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+#add-body {
+  display: flex;
+  justify-content: space-between;
+}
+#add {
+  background-color: rgb(246, 246, 246);
+  border-color: transparent;
+  font-size: 18px;
+  margin-left: 25px;
+}
+#add-time {
+  font-size: 18px;
+  margin-right: 25px;
+}

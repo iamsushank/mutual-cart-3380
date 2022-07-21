@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track(Dashboard)</title>
+    <link
+      rel="icon"
+      href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="track.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="date-picker">
+      <form
+        method="POST"
+        role="form"
+        name="myform"
+        enctype="multipart/form-data"
+      >
+        <h2 id="1">Today</h2>
+        &nbsp; &nbsp;
+        <input
+          type="date"
+          id="jsdate"
+          name="txtdate"
+          onchange="datechecker()"
+        />&nbsp;&nbsp;
+        <span
+          ><i style="font-size: 24px" onclick="myFunction()" class="fa"
+            >&#xf060;</i
+          ></span
+        >
+        &nbsp;&nbsp;
+        <span
+          ><i style="font-size: 24px" onclick="myFunction2()" class="fa"
+            >&#xf061;</i
+          > </span
+        >&nbsp;&nbsp;&nbsp;
+        <img
+          src="https://icon-library.com/images/home-logo-icon/home-logo-icon-23.jpg"
+          alt=""
+          srcset=""
+        />
+      </form>
+      <div id="wrapper">
+        <button id="button-start" ;>
+          <img
+            src="https://i.pinimg.com/originals/87/bd/e3/87bde3e98b99ab577f46f21e2a8a2d44.jpg"
+            alt=""
+            srcset=""
+          />
+          Start
+        </button>
+        <button id="button-stop">Stop</button>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+      </div>
+    </div>
+    <hr />
+    <div id="log-body">
+      <button class="btn-log">+ &nbsp; Add time Log</button>
+      <button class="btn-log">
+        <span>&#9734;</span>&nbsp;&nbsp;Favourite Logs
+      </button>
+    </div>
+    <hr />
+    <div id="add-body">
+      <button id="add"><i> Add Project ,task or tag</i></button>
+      <p id="add-time">00:00</p>
+    </div>
+  </body>
+  <script src="track.js"></script>
+</html>
