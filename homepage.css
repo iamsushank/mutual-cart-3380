@@ -1,6 +1,5 @@
 #body{
     width: 80%;
-    /* border: 1px solid; */
     margin: auto;
     font-family: Futura Lt BT;
     text-align: center;
@@ -122,7 +121,6 @@ a{
     
 }
 #block6 > div{
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;             */
     text-align: center;
     padding: 25px;
     color: #254e6a;
