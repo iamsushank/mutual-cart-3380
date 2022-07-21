@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Price</title>
-    <link rel="stylesheet" href="./1.css">
+    <link rel="stylesheet" href="./Price.css">
     <style>
         
     </style>
@@ -25,8 +25,8 @@
         <!-- Child Div - 2 -->
         <div id="Free-Pro">
             <div class="Free-Pro1">
-                <h3>Free</h3>
-                <p>For individuals or teams just getting started with time tracking.</p>
+                <h3 id="na">Free</h3>
+                <p id="forIndi">For individuals or teams just getting started with time tracking.</p>
                 <div class="price"><span>$</span>0</div>
                <div class="listul">
                 <ul class="list">
@@ -41,7 +41,7 @@
 
             
             <div class="Free-Pro1">
-                <h3>Pro</h3>
+                <h3 id="na">Pro</h3>
                 <p id="freelancers">For freelancers and teams actively managing their time.</p>
                 <div class="price1">
                     <div id="dollor"><span>$</span>6</div>
@@ -777,47 +777,92 @@
 
                                         <!-- Frequently Asked Questions -->
 
-                <div>
-                    <div id="faqs">
-                        <h2>Frequently Asked Questions</h2>
-    
-                                <!-- Select Tags -->
-    
-                            <div class="sleector">
-                                <div id="selectfield">
-                                    <p id="selectText">Will i be charged after 14 days trail?</p>
-                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="">
-                                </div>
-                                <ul id="select_list" class="hideOption">
-                                    <li class="opt_list"> <p>No, you don't have to enter your credit card details to start your Free trial. When you decide to continue using My Hours, enter your payment details and you'll be automatically charged each period (monthly or annually).</p> </li>
-                                </ul>
-                            </div>
-            <script>
-                let selectfield = document.getElementById("selectfield");    
-                // getElementByClassName
-                selectfield.onclick = function(){
-                    var list = document.getElementById('select_list')
-                    list.classList.toggle("hideOption");
-                }
-            </script>     
+<div id="faqBox">
+                <h2>Frequently Asked Questions</h2>
 
-
-
-                            <div class="sleector">
-                                <div id="selectfield">
-                                    <p id="selectText">Will i be charged after 14 days trail?</p>
-                                    <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="">
-                                </div>
-                                <ul id="select_list" class="hideOption">
-                                    <li class="opt_list"> <p>No, you don't have to enter your credit card details to start your Free trial. When you decide to continue using My Hours, enter your payment details and you'll be automatically charged each period (monthly or annually).</p> </li>
-                                </ul>
-                            </div>
-
-
-
-
+                <div id="accordinboxes">
+                  <div class="accordion">
+                    <div class="contentBox">
+                      <div class="label">Will I be charged after the 14 days trail?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p >No, you don't have to enter your credit card details to start your Free trial. When you decide to continue using My Hours, enter your payment details and you'll be automatically charged each period (monthly or annually).</p>
+                        </div>
                     </div>
+                    <div class="contentBox">
+                      <div class="label">Can I switch toa Free account after the Pro Trail ends?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>Sure! You'll always have a choice between staying on the Pro version that comes with a subscription or downgrading to a Free account. Just keep in mind that you will lose access to Pro features.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">What if we need more than 14 days to test to Pro edition?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>Just send us an email to support@myhours.com and we'll provide you with an extension.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">What's Included in the Pro Trail?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>Pro Trial comes with every feature that My Hours offers. If you have trouble finding a functionality you need, send us an email.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">What kind of payment do you accept?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>We accept Visa, MasterCard, American Express, Discover, and PayPal. Additional payment options, including wire transfer, are available for larger teams with 10+ members and an annual payment.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">Do you offer discounts?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>We offer discounts to non-profit companies and larger teams.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">What type of support is included?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>All My Hours users receive email support, while Pro customers can also engage via live chat. Our typical response time is less than 24 hours. Teams with 3+ members can sign up for a free training here.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">Can I get a refund? 
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>We issue a refund when My Hours account with active subscription was not being used for a few months.</p>
+                        </div>
+                    </div>
+                    <div class="contentBox">
+                      <div class="label">Can I deactivate inactive team members?
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="paragrafs">
+                          <p>You can archive inactive team members while keeping their data for reporting. We do not charge for archived team members.
+  
+                          </p>
+                        </div>
+                    </div>
+                  </div>
                 </div>
+
+</div>  
+
+
+
 
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -855,12 +900,12 @@
 
     <div id="howQuestion">
 
-        <h2>Have questions? We're here</h2>
+        <h2 clas>Have questions? We're here</h2>
         <p>It's always nice to have someone to talk to when facing new software. Get in touch and we'll try our best to help you out.</p>
         <div id="atages"> 
-            <p><a href="">EMAIL & LIVE CHAT </a></p>
-            <p><a href=""> TRAINING FOR TEAM </a></p>
-            <p><a href=""> KNOWLWDGE BASE</a></p>
+            <p><a href="" class="linkabc">EMAIL & LIVE CHAT </a></p>
+            <p><a href="" class="linkabc"> TRAINING FOR TEAM </a></p>
+            <p><a href="" class="linkabc"> KNOWLWDGE BASE</a></p>
         </div>
 
     </div>
@@ -869,12 +914,12 @@
 
         <div id="Waste-Need">
             <div id="Waste">
-                <h2>Waste no more time, <br>jump right in!</h2>
+                <h2 class="textabc">Waste no more time, <br>jump right in!</h2>
                 <a href="" id="anchordiv"> <div id="its-free"> Get Started - It's Free</div></a>
                 <div id="paratag">My Hours is Free to use for teams of any size. <a href="">Pro paid plan</a> comes with additional features like invoicing, admin controls and priority support.</div>
             </div>
             <div id="Need">
-                <h2>Need more info? Get a product demo.</h2>
+                <h2 class="textabc">Need more info? Get a product demo.</h2>
 
                 <a href="" id="anchordiv1"> <div id="its-free1">Talk to our Team</div></a>
                 <div id="paratag1">Teams of 6+ are welcome to book a personalized demo to see how My Hours works in detail.</div>
@@ -885,3 +930,12 @@
 </body>
 
 </html>
+<script>
+  let accordion = document.getElementsByClassName("contentBox");
+
+  for(i=0; i<accordion.length; i++){
+    accordion[i].addEventListener("click", function(){
+      this.classList.toggle("active")
+    })
+  }
+</script>
