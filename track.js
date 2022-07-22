@@ -1,7 +1,14 @@
 function datechecker() {
-  event.preventDefault();
-  console.log(typeof parseInt(jsdate.value));
-  document.getElementById("1").innerHTML = jsdate.value;
+  // event.preventDefault();
+  // console.log(typeof parseInt(jsdate.value));
+  // console.log(parseInt(jsdate.value));
+  // document.getElementById("1").innerHTML = jsdate.value;
+  let date = new Date();
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let todaydate = String(date.getDate()).padStart(2, "0");
+  let datepattern = todaydate + "," + month + "," + year;
+  output.innerText = datepattern;
 }
 function myFunction() {
   document.getElementById("jsdate").stepUp(1);
@@ -17,64 +24,102 @@ function today() {
   document.getElementById("1").innerHTML = n;
 }
 
-// function datechecker() {
-//   event.preventDefault();
-//   console.log(typeof parseInt(jsdate.value));
-//   let bag = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(parseInt(jsdate.value));
-//   document.getElementById("1").innerHTML = bag;
-//   console.log(bag)
-// }
-
+let btnshow = document.getElementById("button-day");
+let output = document.getElementById("1");
+btnshow.addEventListener("click", () => {
+  let today = new Date();
+  let day = today.getDay();
+  var days = new Array(7);
+  days[0] = "Sunday";
+  days[1] = "Monday";
+  days[2] = "Tuesday";
+  days[3] = "Wednesday";
+  days[4] = "Thursday";
+  days[5] = "Friday";
+  days[6] = "Saturday";
+  var r = days[today.getDay()];
+  let date = today.getDate();
+  let current_date = `${r},${date}`;
+  output.innerText = current_date;
+});
 // StopWatch
 
-window.onload = function () {
-  var seconds = 00;
-  var tens = 00;
-  var appendTens = document.getElementById("tens");
-  var appendSeconds = document.getElementById("seconds");
-  var buttonStart = document.getElementById("button-start");
-  var buttonStop = document.getElementById("button-stop");
-  var buttonReset = document.getElementById("button-reset");
-  var Interval;
+const lapBtn = document.getElementById("lapBtn");
+const timerSec = document.getElementById("timerSec");
+const timerMins = document.getElementById("timerMins");
+const timerHrs = document.getElementById("timerHrs");
+const startBtn = document.getElementById("button-start");
+const resetBtn = document.getElementById("resetBtn");
+const lapRecord = document.getElementById("lapRecord");
 
-  buttonStart.onclick = function () {
-    clearInterval(Interval);
-    Interval = setInterval(startTimer, 10);
-  };
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
 
-  buttonStop.onclick = function () {
-    clearInterval(Interval);
-  };
+let displaySec = seconds;
+let displayMins = minutes;
+let displayHours = hours;
 
-  buttonReset.onclick = function () {
-    clearInterval(Interval);
-    tens = "00";
-    seconds = "00";
-    appendTens.innerHTML = tens;
-    appendSeconds.innerHTML = seconds;
-  };
+let interval = null;
+let status = "stopped";
+let lapNow = null;
 
-  function startTimer() {
-    tens++;
+function start() {
+  seconds++;
+  if (seconds < 10) displaySec = "0" + seconds.toString();
+  else displaySec = seconds;
 
-    if (tens <= 9) {
-      appendTens.innerHTML = "0" + tens;
-    }
+  if (minutes < 10) displayMins = "0" + minutes.toString();
+  else displayMins = minutes;
 
-    if (tens > 9) {
-      appendTens.innerHTML = tens;
-    }
+  if (hours < 10) displayHours = "0" + hours.toString();
+  else displayHours = hours;
 
-    if (tens > 99) {
-      console.log("seconds");
-      seconds++;
-      appendSeconds.innerHTML = "0" + seconds;
-      tens = 0;
-      appendTens.innerHTML = "0" + 0;
-    }
+  if (seconds / 60 === 1) {
+    minutes++;
+    seconds = 0;
 
-    if (seconds > 9) {
-      appendSeconds.innerHTML = seconds;
+    if (minutes / 60 === 1) {
+      hours++;
+      minutes = 0;
     }
   }
-};
+
+  timerSec.innerHTML = displaySec;
+  timerMins.innerHTML = displayMins;
+  timerHrs.innerHTML = displayHours;
+}
+
+function startStop() {
+  if (status === "stopped") {
+    interval = setInterval(start, 10);
+    startBtn.innerHTML = "Stop";
+    status = "started";
+  } else {
+    clearInterval(interval);
+    startBtn.innerHTML = "Start";
+    status = "stopped";
+  }
+}
+
+function reset() {
+  clearInterval(interval);
+  seconds = 0;
+  minutes = 0;
+  hours = 0;
+  timerSec.innerHTML = "00";
+  timerMins.innerHTML = "00";
+  timerHrs.innerHTML = "00";
+  startBtn.innerHTML = "Start";
+  lapRecord.innerHTML = "";
+  status = "stopped";
+}
+
+function lap() {
+  lapNow = `<div class="lap">Total: ${hours} : ${minutes} : ${seconds}</div>`;
+  lapRecord.innerHTML += lapNow; //+=
+}
+
+lapBtn.addEventListener("click", lap);
+startBtn.addEventListener("click", startStop);
+resetBtn.addEventListener("click", reset);

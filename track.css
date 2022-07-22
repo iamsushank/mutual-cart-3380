@@ -1,4 +1,5 @@
 body {
+  margin-top: 1%;
   font-family: sans-serif;
   width: 84%;
   height: 500px;
@@ -23,11 +24,6 @@ h2 {
   height: 25px;
   cursor: pointer;
 }
-img {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
 #wrapper {
   width: 40%;
   /* border: 2px solid sandybrown; */
@@ -37,31 +33,30 @@ img {
 #button-start {
   width: 90px;
   border: 2px solid red;
-  display: grid;
   background-color: transparent;
   font-family: sans-serif;
   font-size: 20px;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
   background-color: white;
   border-color: #29b850;
   border-radius: 4px;
   color: #29b850;
   font-weight: 400;
+  justify-content: center;
 }
-#button-stop {
+#resetBtn {
   width: 90px;
-  border: 2px solid red;
-  display: grid;
+  border: 2px solid rgb(243, 158, 40);
   background-color: transparent;
   font-family: sans-serif;
   font-size: 20px;
   align-items: center;
   background-color: white;
-  border-color: #e90707;
+  border-color: rgb(243, 158, 40);
   border-radius: 4px;
   color: #e90707;
   font-weight: 400;
+  justify-content: center;
 }
 #seconds {
   font-family: sans-serif;
@@ -85,17 +80,91 @@ span {
   border-radius: 5px;
   border-color: transparent;
 }
-#add-body {
+.add-body {
   display: flex;
   justify-content: space-between;
 }
 #add {
+  width: 100%;
   background-color: rgb(246, 246, 246);
   border-color: transparent;
   font-size: 18px;
-  margin-left: 25px;
+  /* margin-left: 25px; */
 }
 #add-time {
   font-size: 18px;
   margin-right: 25px;
+}
+#home {
+  /* border: 1px solid black; */
+  display: inline;
+}
+#lol {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+#lol > textarea {
+  margin-top: 5px;
+  border-color: transparent;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#lapBtn {
+  background-color: #29b850;
+  color: white;
+  border-radius: 5px;
+  border-color: #29b850;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.lap {
+  color: #29b850;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.org_pra {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+  background-color: #f9fafb;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-color: #dceefa;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.org_card {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.text_dark {
+  color: #375d75;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text_subpara {
+  color: #687481;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.mt4 {
+  margin-top: 1.5rem;
+}
+
+.mt4 > a {
+  margin-right: 3rem;
+  color: #3b8fc2;
+  text-decoration: none;
+}
+.mt4 > a:hover {
+  text-decoration: underline;
 }
