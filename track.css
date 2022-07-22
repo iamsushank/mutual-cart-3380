@@ -168,3 +168,16 @@ span {
 .mt4 > a:hover {
   text-decoration: underline;
 }
+
+/* @media (min-width: 720px) and (max-width: 950px) {
+    .body_content{
+        max-width: 80%;
+        padding: 2rem;
+    }
+}
+@media (min-width: 350px) and (max-width: 719px) {
+    .body_content{
+        max-width: 80%;
+        padding: 2rem;
+    }
+} */
