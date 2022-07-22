@@ -1,9 +1,3 @@
-let direct = () =>{
-    window.location.href = "add_members.html";
-}
-
-
-
 
 let member_data = JSON.parse(localStorage.getItem("userdata"));
 
