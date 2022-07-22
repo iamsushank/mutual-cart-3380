@@ -30,6 +30,10 @@ let ischecked = () => {
     let check3 = document.getElementById("accept3");
     let check4 = document.getElementById("accept4");
 
+    let value1 = check1.value;
+    let value2 = check2.value;
+    let value3 = check3.value;
+
     if (((check1.checked) || (check2.checked) || (check3.checked)) === true) {
         return true;
     } else {

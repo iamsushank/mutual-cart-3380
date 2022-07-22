@@ -1,0 +1,142 @@
+#parent{
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+#sidebar{
+    width: 15%;
+    height: 1000px;
+    border: 1px solid;
+}
+#rightside{
+    /* border: 1px solid; */
+    width: 85%;
+}
+
+#maindiv{
+    width: 45%;
+    margin: auto;
+    /* border: 1px solid; */
+    font-family: 'Inter', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+#toolbar{
+    width: 90.5%;
+    height:43px;
+    border: 1px solid gray;
+}
+#card1 > button{
+    width: 100px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    background-color: #a6ddff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#card1 > button:first-child{
+    margin-right: -10px;
+    background-color: #8ccff9;
+}
+#card1 > button:hover {
+    background-color:#66a7cf;
+}
+
+
+.card2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card2 > div{
+    width: 50%;
+}
+.card2 > div > input{
+    width: 93%;
+    height: 27px;
+}
+input{
+    width: 97%;
+    height: 28px;
+}
+
+::placeholder{
+    font-size: 17px;
+    color:rgb(203, 202, 202);
+}
+
+label{
+    font-size: 12px;
+    font-weight: 550;
+    color: gray;
+}
+
+.card3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card3 > div{
+    width: 31%;
+}
+.card3 > div > input{
+    width: 96%;
+    height: 27px;
+}
+
+#card4 > button{
+    width: 100px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    background-color: #a6ddff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#card4 > button:first-child{
+    margin-right: -10px;
+    background-color: #8ccff9;
+}
+#card4 > button:hover {
+    background-color:#66a7cf;
+}
+#btn5{
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #9fd8fc;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+hr{
+    border-top: 1px solid rgb(196, 196, 196);
+    width: 100%;
+}
+
+input{
+    border: 1px solid rgb(184, 184, 184);
+}
+
+#country{
+    width: 98%;
+    height: 35px;
+    margin-bottom: 20px ;
+}
