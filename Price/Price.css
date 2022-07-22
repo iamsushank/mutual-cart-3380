@@ -1,3 +1,7 @@
+
+
+
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Heading */
 
@@ -12,6 +16,7 @@
     height: 900px;
     /* border: 1px solid red; */
     margin: auto;
+    margin-bottom: 50px;
 }
 #Pick{
     width: 100%;
@@ -195,11 +200,6 @@
 
 
 
-
-
-
-
-
 .table td {
     padding: 1rem 10px;
   }
@@ -273,6 +273,93 @@
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Frequently Asked Questions */
+
+#faqBox{
+    height: auto;
+    width: 70%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 60px;
+}
+#faqBox>h2{
+    text-align: center;
+    font-size: 2em;
+    color: #375d75;
+    margin-bottom: 25px;
+}
+#faqBox{
+    box-sizing: border-box;
+}
+#accordinboxes{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+.accordion{
+    width: 100%;
+}
+.accordion .contentBox{
+    position: relative;
+    margin: 5px 20px;
+}
+.accordion .contentBox .label{
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+/* .accordion .contentBox .label::before
+{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+} */
+.accordion .contentBox .paragrafs{
+    position: relative;
+    /* padding: 10px; */
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    margin-left: 25px;
+}
+.accordion .contentBox.active .paragrafs{
+height: auto;
+/* padding: 10px; */
+/* margin-left: 25px; */
+}
+
+.label>img{
+    width:15px;
+    height: 15px;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paragrafs>p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #faqs{
@@ -339,7 +426,7 @@
 #lightblue{
     border: 1px solid rgb(200, 224, 238);
     width: 70%;
-    height: 650px;
+    height: auto;
     margin: auto;
     margin-top: 20px;
     background-color: rgb(200, 224, 238);
@@ -541,3 +628,267 @@
     margin: auto;
     line-height: 20px;
 }
+
+
+
+
+
+/* #Pick{
+    width: 100%;
+    height: 25%;
+    /* border:1px solid red; */
+    /* margin: auto; */
+    /* text-align: center; */
+/* } */ 
+
+@media screen and (max-width: 900px){
+    /* #Pickyourplan{
+        width: 60%;
+    }
+    #Pick{
+        width: 90%;
+    }
+    #Pick>h1{
+        font-size:50px ;
+    }
+    #Pick>h2{
+        font-size:25px ;
+    }
+    .listul>ul>li{
+        font-size: 15px;
+        width: auto;
+    }
+    .Free-Pro1>p{
+        font-size: 15px;
+        font-weight: 200;
+       
+    }
+    .Free-Pro1{
+        width: 60%;
+    } */
+
+    #Pickyourplan{
+        width: 40%;
+    }
+    #Pick{
+        width: 90%;
+    }
+    #Pick>h1{
+        font-size:35px ;
+    }
+    #Pick>h2{
+        font-size:20px ;
+    }
+    #na{
+        font-size: 15px;
+    }
+    #forIndi{
+        font-size: 10px;
+    }
+    .listul>ul{
+        font-size: 10px;
+        width: 100%;
+    }
+    .listul>ul>li{
+        font-size: 10px;
+        width: 100%;
+        line-height: 15px;
+    }
+    #freelancers{
+        width: auto;
+        font-size: 10px;
+    }
+    #dollor1>p{
+        font-size: 5px;
+    }
+    .price{
+        font-size: auto;
+    }
+    .free-Pro-Button1{
+        width: 100% ;
+        font-size: 10px;
+        padding: 0px;
+        
+    }
+    .free-Pro-Button{
+        width: 100%;
+        font-size: 10px;
+        padding: 0px;
+    }
+    #topFreePaid{
+        width: 75%;
+    }
+    #features>h2{
+        font-size: 18px;
+    }
+    #free_paid>div{
+        font-size: 18px;
+        width: 30%;
+    }
+    .headings{
+        width: 80%;
+    }
+    .compare-plans table{
+        width: 70%;
+    }
+   #text1{
+    font-size: 25px;
+   }
+   #memberprice1{
+    width: 80%;
+   }
+   #memberprice1>div{
+    width: 25%;
+   }
+   .members{
+    font-size: 5px;
+   }
+   .memberPrice, .memberPriceSpan{
+    font-size: 25px;
+   }
+   
+  #Waste-Need{
+    width: 80%;
+    height: auto;
+  }
+  #Waste{
+    width: 35%;
+  }
+  #Waste>h2{
+    font-size: 20px;
+  }
+  #Need{
+    width: 30%;
+  }
+  #Need>h2{
+    font-size: 20px;
+  }
+  #anchordiv1>div{
+    font-size: 10px;
+    height: 15px;
+  }
+#anchordiv>div{
+    font-size: 10px;
+    width: 45%;
+}
+#paratag1, #paratag{
+    font-size: 10px;
+    width: 100%;
+}
+  
+
+}
+
+
+@media screen and (max-width: 500px){
+    #Pickyourplan{
+        width: 40%;
+    }
+    #Pick{
+        width: 90%;
+    }
+    #Pick>h1{
+        font-size:35px ;
+    }
+    #Pick>h2{
+        font-size:20px ;
+    }
+    #na{
+        font-size: 15px;
+    }
+    #forIndi{
+        font-size: 10px;
+    }
+    .listul>ul{
+        font-size: 10px;
+        width: 100%;
+    }
+    .listul>ul>li{
+        font-size: 10px;
+        width: 100%;
+        line-height: 15px;
+    }
+    #freelancers{
+        width: auto;
+        font-size: 10px;
+    }
+    #dollor1>p{
+        font-size: 5px;
+    }
+    .price{
+        font-size: auto;
+    }
+    .free-Pro-Button1{
+        width: 100% ;
+        font-size: 10px;
+        padding: 0px;
+        
+    }
+    .free-Pro-Button{
+        width: 100%;
+        font-size: 10px;
+        padding: 0px;
+    }
+    #topFreePaid{
+        width: 75%;
+    }
+    #features>h2{
+        font-size: 18px;
+    }
+    #free_paid>div{
+        font-size: 18px;
+        width: 30%;
+    }
+    .headings{
+        width: 80%;
+    }
+    .compare-plans table{
+        width: 70%;
+    }
+   #text1{
+    font-size: 25px;
+   }
+   #memberprice1{
+    width: 80%;
+   }
+   #memberprice1>div{
+    width: 25%;
+   }
+   .members{
+    font-size: 5px;
+   }
+   .memberPrice, .memberPriceSpan{
+    font-size: 25px;
+   }
+   
+  #Waste-Need{
+    width: 80%;
+    height: auto;
+  }
+  #Waste{
+    width: 35%;
+  }
+  #Waste>h2{
+    font-size: 20px;
+  }
+  #Need{
+    width: 30%;
+  }
+  #Need>h2{
+    font-size: 20px;
+  }
+  #anchordiv1>div{
+    font-size: 10px;
+    height: 15px;
+  }
+#anchordiv>div{
+    font-size: 10px;
+    width: 45%;
+}
+#paratag1, #paratag{
+    font-size: 10px;
+    width: 100%;
+}
+  
+}
+
