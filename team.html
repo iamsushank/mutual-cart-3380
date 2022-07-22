@@ -5,106 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #parent{
-            width: 100%;
-            border: 1px solid;
-            display: flex;
-            justify-content: space-between;
-            
-        }
-        #sidebar{
-            width: 15%;
-            height: 1000px;
-            border: 1px solid;
-        }
-        #main{
-            width: 80%;
-            /* border: 1px  solid; */
-            font-family: 'Inter', sans-serif;
-            margin-right: 30px;
-            margin-top: 15px;
-            
-        }
-        #div1{
-            width:100%;
-            height: 80px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-        }
-        #btn1{          
-            width: 220px;
-            font-size: 18px;
-            height: 45px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            background-color: #3b8fc2;
-            margin-top: 17px;
-            color: white;
-        }
-
-        #div2{
-            width:97%;
-            height: 180px;
-            margin: auto;
-            background-color: #f9fafb;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            margin-bottom: 30px;
-            padding: 10px 0px 5px 30px; 
-        }
-
-        #title{
-            font-size:17px;
-            color: rgb(97, 96, 96);
-            margin-top: -20px;
-            margin-bottom: 40px;
-        }
- 
-        .a1{
-               text-decoration: none;
-               color: #3e9fdc; 
-               margin-right: 50px;
-               font-size: 17px;
-        }
-
-        #div3{
-            border: 1px solid;
-            width:100%;
-            height: 50px;
-            margin: auto;
-        }
-        #query{
-            width: 500px;
-        }
-
-
-        table{
-            /* border: 1px solid black; */
-            width: 100%;
-            text-align: left;
-            color: rgb(117, 117, 117);
-            font-weight: lighter;
-            font-size: 15px;
-        }
-
-        hr{
-            border-top: 2.5px solid rgb(196, 196, 196);
-            width: 100%;
-        }
-        .cb1{
-            width: 5px;
-        }
-        .cb2{
-            width: 5px;
-            height: 6px;
-        }
-        .cb2:checked{
-            background-color: #3e9fdc;
-        }
-
-    </style>
+    <script
+    src="https://kit.fontawesome.com/10b417d43c.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="icon"
+    href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="/team.css">
 </head>
 <body>
     <div id="parent">
@@ -112,23 +22,63 @@
             <!-- for the sidebar section -->
         </div>
         <div id="main">
-            <div id="div1">
-                <h1 style="font-size:45px; margin-top: 5px;">Team members</h1>
-                <button id="btn1" onclick="direct()"><a href="add_members.html" style="text-decoration:none; color: white">+ New Team Member</a></button>
-            </div>
-            <div  id="div2">
-                <p style="color: #316889; font-size: 27px;">Invite your entire team to track their work</p>
-                <p id="title">Add your colleagues, assign them the appropriate user roles, and allocate them to their teams and the projects they will be working on.</p>
-                <div>
-                    <a href="" class="a1">Learn about team management </a>
-                    <a href="" class="a1">Learn about user roles</a>
-                    <a href="" class="a1">Import your team</a>
+            <div class="" id="pj_in_p2">
+                <div class="head_pj">
+                  <h1 class="prj">Team members</h1>
+                  <a href="add_members.html"
+                    ><button class="ad_nw_pj">
+                      <i class="fa-solid fa-plus"></i> Add team member
+                    </button></a
+                  >
                 </div>
-            </div>
-            <div id="div3">
-                <input type="text" placeholder="search by project or client's name" id="query">
-                <button>status</button>
-                <button>download</button>
+                <!-- Organise your work -->
+                <div class="org_pra">
+                  <div class="org_card">
+                    <span class="text_dark">Invite your entire team to track their work</span>
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                  </div>
+                  <div class="text_subpara">
+                    Add your colleagues, assign them the appropriate user roles, and allocate them
+                     to their teams and the projects they will be working on.
+                  </div>
+                  <div class="mt4">
+                    <a href="" id="learnAboutProjectsAndTasksLink"
+                      >Learn about projects and tasks
+                      <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                    <a href="" id="aboutBillingRatesLink"
+                      >About billing rates
+                      <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                    <a href="" id="importClientsLink"
+                      >Import clients <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+      
+                <!-- search & export row -->
+                <div class="d-flex">
+                  <div class="srch_actv">
+                    <div class="inp_div">
+                      <input
+                        type="text"
+                        id="input_search"
+                        placeholder="Search by team member name"
+                      />
+                    </div>
+                    <div class="active_btn">
+                      <button id="button_active">
+                        <i class="fa-solid fa-inbox"></i> Status
+                      </button>
+                    </div>
+                  </div>
+      
+                  <div class="export_grp" style="background-color:#c9e8ff; border-radius:5px;">
+                    <button class="projectsExportBtn">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
+                </div>
             </div>
             <table>
                 <thead>                    
@@ -146,9 +96,8 @@
                   <tr><td colspan="9"><hr></td></tr>    
                 </thead>
                 <tbody>
-                  <!-- for appending the output -->
+                    <!-- append team members here -->
                 </tbody>
-             
             </table>
         </div>      
     </div>
