@@ -175,11 +175,10 @@ hr{
 .cb2{
     width: 12px;
     height: 12px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .cb2:checked{
     background-color: #3e9fdc;
-    cursor: '\f062';
 }
 
 
