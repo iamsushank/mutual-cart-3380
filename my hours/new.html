@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading1{
+        
+        font-size: 45px;
+        font-family: sans-serif;
+        color: black;
+        font-weight: 200;
+    }
+    .new_client{
+        width:450px;
+        margin:auto
+    }
+    p{
+        font-size: 12px;
+        font-weight: bold;
+        color:rgb(135, 130, 130)
+    }
+    input{
+        border-radius: 5px;
+        width:450px;
+        height:35px;
+        margin-top: -10px;
+        border: 1px solid rgb(135, 130, 130) ;
+    }
+    #address{
+        height:80px
+    }
+    button{
+        margin-top: 20px;
+    }
+    #button1{
+        background-color: cornflowerblue;
+        border: none;
+        color:white;
+    height:30px
+    }
+    #button2{
+        background-color: rgb(164, 189, 236);
+        border: none;
+        color:white;
+    height:30px
+    }
+    hr{
+        margin-top: 30px;
+    }
+    #taxji{
+width:220px;
+border-radius: 5px;
+
+    }
+    #tax{
+        
+        display:flex;
+        justify-content: space-between;
+    }
+</style>
+<body> 
+    <div class="new_client">
+    <p id="heading1">New Client</p>
+    <p>NAME</p>
+    <input type="text" id="name">
+    <p>CONTACT PERSON</p>
+    <input type="text" id="contact">
+    <p>EMAIL</p>
+    <input type="text" id="email">
+    <p>PHONE</p>
+    <input type="text" id="phone">
+    <p>ADDRESS</p>
+    <input type="text" id="address" >
+    <hr>
+    <div id="tax">   
+        <div><p>TAX NUMBER</p>
+        <input type="text" id="taxji"></div>
+        <div><p>TAX PERCENTAGE</p>
+        <input type="number" id="taxji"></div>
+    </div>
+    <p>TAX NUMBER</p>
+    <input type="text">
+    <div><button id="button1" onclick="savadata()">SAVE</button> <a href="client.html"> <button id="button2" >CANCEL</button></a></div>
+</div>
+</body>
+</html>
+<script>
+    //let arr=JSON.parse(localStorage.getItem("dataclient"))||[]
+    function savadata(){
+        event.preventDefault()
+        
+    console.log(1)
+    let obj1={
+        name:document.getElementById("name").value,
+        contact:document.getElementById("contact").value,
+        email:document.getElementById("email").value,
+
+    };
+  let arr=JSON.parse(localStorage.getItem("dataclient"))||[];
+    arr.push(obj1)
+    console.log(arr)
+localStorage.setItem("dataclient",JSON.stringify(arr))
+window.location.href="client.html"
+    }
+</script>
