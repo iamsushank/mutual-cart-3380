@@ -1,0 +1,70 @@
+#content {
+    width: 100%;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+  #content>h1 {
+    font-family: "Mukta", sans-serif;
+    font-size: 88px;
+    font-weight: 100;
+    line-height: 96px;
+    text-align: left;
+    word-spacing: 0px;
+    display: block;
+  }
+  .content-h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 38.4px;
+    color: #375d75;
+    text-align: left;
+    word-spacing: 0px;
+  }
+  #content>p {
+    font-size: 38px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    display: block;
+  }
+  #video {
+    width: 100%;
+  }
+  #form-data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    gap: 10px;
+  }
+  .optn {
+    font-size: 20px;
+    font-family: "Mukta", sans-serif;
+  }
+  #form-details {
+    height: 50px;
+  }
+  #form-data > input {
+    height: 25px;
+    font-size: 22px;
+  }
+  #form-data > label {
+    display: block;
+    font-size: 27px;
+    font-family: "Mukta", sans-serif;
+    color: rgb(197, 197, 197);
+  }
+  #submit {
+    font-family: "Mukta", sans-serif;
+    background-color: #3b8fc2;
+    border: 1px solid #2cb1f0;
+    margin: 15px 0 15px 0;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
+    position: relative;
+  }
+  textarea{
+    font-size: 20px;
+  }
