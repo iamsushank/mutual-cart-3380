@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./sidebar.css" />
+  </head>
+  <body>
+    <div id="sideBar">
+      
+
+        <div id="sidebarBox">
+                <img src="https://app.myhours.com/assets/myhours_app_logo_icon.svg" alt="">
+
+                <div id="accmainbox">
+                  <div class="mainaccordin">
+                    <div class="conBoxes">
+                        <div class="labelbox"><a href="">Track</a></div>
+                        <div class="labelbox"><a href="">Project</a></div>
+                      <div class="labelbox"><a href="">Report</a>
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="parainsideatag">
+                          <p ><a href="">Dashboard</a></p>
+                          <p><a href="">Activity</a></p>
+                          <p><a href="">Team pivot</a></p>
+                          <p><a href="">Economy</a></p>
+                          <p><a href="">Timesheet</a></p>
+                        </div>
+                    </div>
+                    <div class="conBoxes">
+                      <div class="labelbox">Clients
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="parainsideatag">
+                          <p><a href="">Clients</a></p>
+                          <p><a href="">Invoices</a></p>
+                          <p><a href="">Uninvoiced</a></p>
+                        </div>
+                    </div>
+                    <div class="conBoxes">
+                      <div class="labelbox">Team
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25623.png" alt="Down Arrow">
+                      </div>
+                        <div class="parainsideatag">
+                          <p><a href="">Team members</a></p>
+                          <p><a href="">Teams</a></p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="protrailexpire">
+                        <p>Pro trial expires in 13 days.</p>
+                        <a href="">Keep/leave the Pro</a>
+                </div>
+                <div id="helpApps">
+                    <p><a href="">Help</a></p>
+                    <p><a href="">Apps</a></p>
+                    <p><a href="">What's new</a></p>
+                    <p><a href="">Profile</a></p>
+                </div>
+                
+
+</div> 
+
+
+
+    </div>
+  </body>
+</html>
+<script>
+  let mainaccordin = document.getElementsByClassName("conBoxes");
+
+  for (i = 0; i < mainaccordin.length; i++) {
+    mainaccordin[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+    //   this.style.color ="blue"|| "black"
+    });
+  }
+</script>
