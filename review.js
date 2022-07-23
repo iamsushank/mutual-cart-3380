@@ -1,12 +1,13 @@
 function homeji()
 {
-    console.log(8)
+  console.log(8)
   let arrayji=JSON.parse(localStorage.getItem("userDetails")) 
-  if(arrayji.length!=0)
-  {
-    window.location.href="#"
-  } 
-  else{
-    window.location.href="#"
-  }
+  //console.log(Object.keys(arrayji).length)
+if(arrayji!==null)
+{
+window.location.href="./My_Hours/homepage.html"
+} 
+else if (arrayji === null){
+window.location.href="signup.html"
+}
 }

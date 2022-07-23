@@ -96,10 +96,13 @@ img{
 #mode{
     display:flex
 }
+#client{
+    margin-left:40px
+}
 #sidebar{
     width:14rem;
     height:auto;
-    border:1px solid red
+    
 }
 select{
     width:30px;
