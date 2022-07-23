@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/10b417d43c.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="icon"
+    href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+    type="image/x-icon"
+  />
+    <link rel="stylesheet" href="/team.css">
+</head>
+<body>
+    <div id="parent">
+        <div id="sidebar">
+            <!-- for the sidebar section -->
+        </div>
+        <div id="main">
+            <div class="" id="pj_in_p2">
+                <div class="head_pj">
+                  <h1 class="prj">Team members</h1>
+                  <a href="add_members.html"
+                    ><button class="ad_nw_pj">
+                      <i class="fa-solid fa-plus"></i> Add team member
+                    </button></a
+                  >
+                </div>
+                <!-- Organise your work -->
+                <div class="org_pra">
+                  <div class="org_card">
+                    <span class="text_dark">Invite your entire team to track their work</span>
+                    <a href=""><i class="fa-solid fa-xmark"></i></a>
+                  </div>
+                  <div class="text_subpara">
+                    Add your colleagues, assign them the appropriate user roles, and allocate them
+                     to their teams and the projects they will be working on.
+                  </div>
+                  <div class="mt4">
+                    <a href="" id="learnAboutProjectsAndTasksLink"
+                      >Learn about projects and tasks
+                      <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                    <a href="" id="aboutBillingRatesLink"
+                      >About billing rates
+                      <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                    <a href="" id="importClientsLink"
+                      >Import clients <i class="fa-solid fa-square-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+      
+                <!-- search & export row -->
+                <div class="d-flex">
+                  <div class="srch_actv">
+                    <div class="inp_div">
+                      <input
+                        type="text"
+                        id="input_search"
+                        placeholder="Search by team member name"
+                      />
+                    </div>
+                    <div class="active_btn">
+                      <button id="button_active">
+                        <i class="fa-solid fa-inbox"></i> Status
+                      </button>
+                    </div>
+                  </div>
+      
+                  <div class="export_grp" style="background-color:#c9e8ff; border-radius:5px;">
+                    <button class="projectsExportBtn">
+                      <i class="fa-solid fa-download"></i>
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <table>
+                <thead>                    
+                  <tr>  
+                    <td class="cb1"><input type="checkbox"/></td>                  
+                    <th>NAME</th>
+                    <th>ACTIVITY</th>
+                    <th>EMAIL</th>
+                    <th>LABOR RATE</th>
+                    <th>BILLABLE RATE</th>
+                    <th>ROLE</th>
+                    <th>STATUS</th>
+                    <th>ACTION</th>
+                  </tr>  
+                  <tr><td colspan="9"><hr></td></tr>    
+                </thead>
+                <tbody>
+                    <!-- append team members here -->
+                </tbody>
+            </table>
+        </div>      
+    </div>
+</body>
+</html>
+<script src="/team.js"></script>
