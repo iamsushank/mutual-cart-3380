@@ -1,0 +1,6 @@
+Header html is a master copy of navbar, kind of master copy.
+Use:- <div id="main-navbar"> import here navbar </div> and paste it inside of it.
+Css copy from style tag.
+
+For footer 
+create a div :- <div id="main-footer"> import here footer <div>

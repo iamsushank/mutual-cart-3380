@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+      #main-footer {
+        width: 100%;
+        background-color: #375d75;
+      }
+      #footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(auto, auto);
+        gap: 20px;
+      }
+      #col-1 {
+        margin-top: 35px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        line-break: 0;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 0;
+        text-align: center;
+        color: white;
+      }
+      /* #col-1>div>img{
+        border: 1px solid rgb(5, 231, 248);
+        width: 100%;
+    } */
+      .cols {
+        margin-top: 35px;
+        /* border: 2px solid red; */
+        align-items: center;
+        font-family: "Mukta", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: left;
+      }
+      .cols > h2 {
+        font-size: 26px;
+        text-align: left;
+        color: white;
+      }
+      .cols > a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        line-height: 2;
+        font-size: 22px;
+        justify-content: flex-start;
+      }
+      #foot-line {
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 26.4px;
+        color: white;
+        text-align: left;
+        word-spacing: 0px;
+        text-align: center;
+        font-family: "Mukta", sans-serif;
+        letter-spacing: 0.8px;
+        word-spacing: 2px;
+      }
+      #foot-line>a{
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-footer">
+      <div id="footer">
+        <div id="col-1">
+          <img 
+            src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fc9236f9ab08c7bdf83fe75_Logo-300px.png"
+            alt=""
+          />
+          <p class="col-1-p" >© 2022 My Hours.</p>
+          <p class="col-1-p" >All rights reserved.</p>
+        </div>
+        <div class="cols">
+          <h2>Product</h2>
+          <a href="#"> How it works</a>
+          <br />
+          <a href="#">Features</a>
+          <br />
+          <a href="#">Mobile app</a>
+          <br />
+          <a href="#">Use case collection</a>
+          <br />
+          <a href="#">Pricing</a>
+          <br />
+          <a href="#">Guides</a>
+          <br />
+          <a href="#">Customer Reviews</a>
+          <br />
+          <a href="#">Start Free</a>
+        </div>
+        <div class="cols">
+          <h2>Resources</h2>
+          <a href="#"> Time Tracking Library</a>
+          <br />
+          <a href="#">About</a>
+          <br />
+          <a href="#">Terms of Use</a>
+          <br />
+          <a href="#">Sitemap</a>
+          <br />
+          <a href="#">Project Management Software</a>
+          <br />
+          <a href="#">Time Management Apps</a>
+          <br />
+          <a href="#">Best Time Tracking Apps of 2022</a>
+          <br />
+          <a href="#">Free Time Card Calculator</a>
+        </div>
+        <div class="cols">
+          <h2>Use Cases</h2>
+          <a href="#"> Project billing</a>
+          <br />
+          <a href="#">Time reports and Project analytics</a>
+          <br />
+          <a href="#">Time reports and Project analytics</a>
+          <br />
+          <a href="#">Expense tracking</a>
+          <br />
+          <a href="#">Calculating project profitability</a>
+          <br />
+          <a href="#">Timesheet time tracking</a>
+        </div>
+        <div class="cols">
+          <h2>Integrations</h2>
+          <a href="#"> QuickBooks</a>
+          <br />
+          <a href="#">Zapier</a>
+        </div>
+        <div class="cols">
+          <h2>Social</h2>
+          <a href="https://www.facebook.com/myHoursTeam/">Facebook</a>
+          <br />
+          <a href="https://twitter.com/MyHoursTeam">Twitter</a>
+        </div>
+      </div>
+      <div>
+        <p id="foot-line">
+          Looking for employee attendance and absence tracking? Visit <a href="https://allhours.com/?_ga=2.26538617.5131411.1658208313-1044255821.1658208313"><strong> All Hours.</strong></a> 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

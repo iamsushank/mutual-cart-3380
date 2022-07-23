@@ -1,26 +1,14 @@
-#parent{
-    width: 100%;
-    border: 1px solid;
-    display: flex;
-    justify-content: space-between; 
-}
-#sidebar{
-    width: 15%;
-    height: 1000px;
-    border: 1px solid;
-}
-#main{
-    width: 80%;
-    font-family: 'Inter', sans-serif;
-    margin-right: 30px;
-    margin-top: 15px;
-   
-}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+#pj_cont{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
 .right_p_body, .pj_inner_div{
     border: 1px solid red;
@@ -72,7 +60,7 @@
     line-height: 1.5;
     font-weight: 400;
     text-align: left;
- }
+}
 .mt4{
     margin-top: 1.5rem;
 }
@@ -94,7 +82,7 @@
 .srch_actv, .export_grp{
     display: flex;
 }
- .inp_div{
+.inp_div{
     width: 19rem;
     margin-right: 1rem;
 }
@@ -135,6 +123,7 @@
     background-color: transparent;
     border: 1px solid transparent;
 }
+
 #grp_cl_btn{
     height: 100%;
     color: #3b8fc2;
@@ -145,49 +134,23 @@
     border-radius: 0.25rem;
     border: 0;
 }
-#pj_cont{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 15% 85%;
-}
-hr{
-    border-top: 2.5px solid rgb(196, 196, 196);
-    width: 100%;
-}
-table{
-    width: 100%;
-    text-align: left;
-    color: rgb(151, 151, 151);
-    font-weight: lighter;
-    font-size: 13px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+
+.table_details>table{
+    display: flex;
+    flex-direction: column;
 }
 
-hr{
-    border-top: 2px solid rgb(196, 196, 196);
-    width: 100%;
+.table_details>table>tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
 }
-.cb1{
-    width: 5px;
+tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
 }
-.cb2{
-    width: 12px;
-    height: 12px;
-<<<<<<< HEAD
-    margin-right: 20px;
-}
-.cb2:checked{
-    background-color: #3e9fdc;
-    cursor: '\f062';
-}
-=======
-    /* margin-right: 20px; */
-}
-.cb2:checked{
-    background-color: #3e9fdc;
-}
-
-
->>>>>>> main
