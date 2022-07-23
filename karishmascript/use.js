@@ -1,4 +1,4 @@
-function homeji()
+function home()
 {
     console.log(8)
     let arrayji=JSON.parse(localStorage.getItem("userDetails")) 

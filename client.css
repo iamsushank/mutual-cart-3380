@@ -62,6 +62,9 @@ border:1 px solid black
         align-items: center;
         padding-left: 25px;
     }
+    #client{
+        margin-left: 50px;
+    }
     a{
         text-decoration: none;
     }
@@ -96,10 +99,13 @@ img{
 #mode{
     display:flex
 }
+#client{
+    margin-left:40px
+}
 #sidebar{
     width:14rem;
     height:auto;
-    border:1px solid red
+    
 }
 select{
     width:30px;

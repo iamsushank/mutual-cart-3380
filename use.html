@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./use.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="/footer.css">
 </head>
 <style>
 
@@ -12,7 +14,7 @@
 <body>
 <!-- <..........................navbar.......................> -->
 
-<!-- <div>add navbar here</div> -->
+ <div id="navbar"></div> 
 
 <!-- <.....................heade section.....................> -->
 
@@ -190,22 +192,14 @@
 <!-- <-------------------footer section--------------------> 
 
 
-<!-- <div>Add footer here</div> -->
+ <div id=main-footer>Add footer here</div> 
 
 </body>
 </html>
-
-<script>
-    function homejii()
-    {
-        console.log(8)
-        let arrayji=JSON.parse(localStorage.getItem("userDetails")) 
-  if(arrayji.length!=0)
-  {
-    window.location.href="#"
-  } 
-  else{
-    window.location.href="#"
-  }
-    }
-</script>
+<script src="./karishmascript/use.js"></script>
+<script type="module" >
+    import navbar from "./header.js"
+    document.getElementById('navbar').innerHTML=navbar();
+    import footer from "./footer.js"
+    document.getElementById('main-footer').innerHTML=footer();
+ </script>
