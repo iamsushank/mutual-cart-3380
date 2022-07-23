@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+#parent{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+#child1{
+    width: 15%;
+    border: 1px solid red;
+    height: 900px;
+}
+#child2{
+    width: 85%;
+    /* border: 1px solid red; */
+    height: 900px;
+    padding: 50px 110px;
+}
+#child2>h1{
+    margin-bottom: 3%;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+}
+#appsdiv{
+    /* border: 1px solid red; */
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#appsdiv>a{
+    font-weight: 500;
+}
+#appsdiv>a,p{
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #3b8fc2;
+}
+#appsdiv>p{
+    color: #275674;
+    font-weight: 500;
+    font-size: 18px;
+}
+#appsdiv>a:hover{
+    text-decoration: underline;
+}
+#androidLogo{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+#iosLogo{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.plugimg{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
