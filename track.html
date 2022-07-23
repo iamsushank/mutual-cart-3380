@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track(Dashboard)</title>
+    <script
+      src="https://kit.fontawesome.com/eb9a2dc065.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="track.css" />
+    <style></style>
+  </head>
+  <body>
+    <div id="date-picker">
+      <form
+        method="POST"
+        role="form"
+        name="myform"
+        enctype="multipart/form-data"
+      >
+        <h2 id="1" style="color: #29b850;">Today</h2>
+        &nbsp; &nbsp;
+        <input
+          type="date"
+          id="jsdate"
+          name="txtdate"
+          onchange="datechecker()"
+        />&nbsp;&nbsp;
+        <span
+          ><i style="font-size: 24px" onclick="myFunction()" class="fa"
+            >&#xf060;</i
+          ></span
+        >
+        &nbsp;&nbsp;
+        <span
+          ><i style="font-size: 24px" onclick="myFunction2()" class="fa"
+            >&#xf061;</i
+          > </span
+        >&nbsp;&nbsp;&nbsp;
+        <div id="home"><i id="button-day" class="fa-solid fa-house"></i></div>
+      </form>
+      <div id="wrapper">
+        <button id="button-start">Start</button>
+        <button type="button" id="resetBtn">Reset</button>
+        <!-- <p><span id="seconds">00</span>:<span id="tens">00</span></p> -->
+        <p>
+          <span class="timerDisplay" id="timerHrs">00</span>:<span
+            class="timerDisplay"
+            id="timerMins"
+            >00</span
+          >:<span class="timerSec" id="timerSec">00</span>
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- Organise your work -->
+    <div class="org_pra">
+      <div class="org_card">
+        <span class="text_dark"> Organize your work with projects </span>
+        <a href=""><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="text_subpara">
+        Before you start tracking your work, create projects, assign clients,
+        and add tasks. You can choose from advanced billing rates, set up
+        approval workflow, add custom budgets, and set task estimates. Assign
+        tasks to your team and monitor allocated time.
+      </div>
+      <div class="mt4">
+        <a href="" id="learnAboutProjectsAndTasksLink"
+          >Learn about projects and tasks
+          <i class="fa-solid fa-square-arrow-up-right"></i
+        ></a>
+        <a href="" id="aboutBillingRatesLink"
+          >About billing rates <i class="fa-solid fa-square-arrow-up-right"></i
+        ></a>
+        <a href="" id="importClientsLink"
+          >Import clients <i class="fa-solid fa-square-arrow-up-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <hr />
+    <div id="log-body">
+      <button class="btn-log">+ &nbsp; Add time Log</button>
+      <button class="btn-log">
+        <span>&#9734;</span>&nbsp;&nbsp;Favourite Logs
+      </button>
+    </div>
+    <hr />
+    <div class="add-body">
+      <div id="lol">
+        <button id="add"><i> Add Project ,task or tag</i></button>
+        <textarea
+          name=""
+          id=""
+          cols="15"
+          rows="10"
+          placeholder="Empty Description"
+        ></textarea>
+      </div>
+      <div id="laps">
+        <p id="lapRecord"></p>
+        <button type="button" id="lapBtn">Get Time</button>
+      </div>
+    </div>
+    <hr />
+    <div class="add-body">
+      <div id="lol">
+        <button id="add"><i> Add Project ,task or tag</i></button>
+        <textarea
+          name=""
+          id=""
+          cols="15"
+          rows="10"
+          placeholder="Empty Description"
+        ></textarea>
+      </div>
+      <div id="laps">
+        <p id="lapRecord"></p>
+        <button type="button" id="lapBtn">Get Time</button>
+      </div>
+    </div>
+    <hr />
+  </body>
+  <script src="track.js"></script>
+</html>
