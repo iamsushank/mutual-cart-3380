@@ -1,3 +1,8 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,10 +13,9 @@
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 14rem auto;
 }
-.right_p_body, .pj_inner_div{
-    border: 1px solid red;
+.right_p_body{
     padding: 2rem;
     padding-bottom: 5rem;
 }

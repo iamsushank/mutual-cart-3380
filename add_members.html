@@ -1,226 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/add_members.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Team member</title>
+    <link rel="stylesheet" href="/add_members.css" />
+  </head>
+  <body>
     <div id="parent">
-        <div id="sideBar">
-            <div id="sidebarBox">
-              <div id="img-fr-sb">
-                <img
-                  id="logo-sq"
-                  src="https://icon-library.com/images/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png"
-                  alt=""
-                />
-                <img
-                  src="https://app.myhours.com/assets/myhours_app_logo_icon.svg"
-                  alt=""
-                />
+      <div id="sideBar">
+        <div id="sidebarBox">
+          <div id="img-fr-sb">
+            <img
+              id="logo-sq"
+              src="https://icon-library.com/images/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png"
+              alt=""
+            />
+            <img
+              src="https://app.myhours.com/assets/myhours_app_logo_icon.svg"
+              alt=""
+            />
+          </div>
+          <div style="background-color: #f8f9fa" id="to-scroll">
+            <div id="accmainbox">
+              <div class="mainaccordin">
+                <div class="conBoxes">
+                  <div class="labelbox t-p-h-a">
+                    <a class="fb-aws-n-tx" href=""
+                      ><i class="fa-solid fa-stopwatch"></i> &nbsp;&nbsp;
+                      Track</a
+                    >
+                  </div>
+                  <div class="labelbox t-p-h-a">
+                    <a class="fb-aws-n-tx" href=""
+                      ><i class="fa-solid fa-briefcase"></i
+                      >&nbsp;&nbsp;&nbsp;Project</a
+                    >
+                  </div>
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-chart-column"></i
+                      >&nbsp;&nbsp;&nbsp;Report</span
+                    >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                    <div class="parainsideatag">
+                      <p><a href="">Dashboard</a></p>
+                      <p><a href="">Activity</a></p>
+                      <p><a href="">Team pivot</a></p>
+                      <p><a href="">Economy</a></p>
+                      <p><a href="">Timesheet</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="conBoxes">
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-folder"></i
+                      >&nbsp;&nbsp;&nbsp;Clients</span
+                    >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                  </div>
+                  <div class="parainsideatag">
+                    <p><a href="">Clients</a></p>
+                    <p><a href="">Invoices</a></p>
+                    <p><a href="">Uninvoiced</a></p>
+                  </div>
+                </div>
+                <div class="conBoxes">
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-users"></i
+                      >&nbsp;&nbsp;&nbsp;Team</span
+                    >
+                    <img
+                      id="team-arrow-img"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                  </div>
+                  <div class="parainsideatag">
+                    <p><a href="team.html">Team members</a></p>
+                    <p><a href="myteams.html">Teams</a></p>
+                  </div>
+                </div>
               </div>
-              <div style="background-color: #f8f9fa" id="to-scroll">
-                <div id="accmainbox">
-                  <div class="mainaccordin">
-                    <div class="conBoxes">
-                      <div class="labelbox t-p-h-a">
-                        <a class="fb-aws-n-tx" href=""
-                          ><i class="fa-solid fa-stopwatch"></i> &nbsp;&nbsp;
-                          Track</a
-                        >
-                      </div>
-                      <div class="labelbox t-p-h-a">
-                        <a class="fb-aws-n-tx" href=""
-                          ><i class="fa-solid fa-briefcase"></i
-                          >&nbsp;&nbsp;&nbsp;Project</a
-                        >
-                      </div>
-                      <div class="fb-aws-n-tx labelbox">
-                        <span fb-aws-span
-                          ><i class="fa-solid fa-chart-column"></i
-                          >&nbsp;&nbsp;&nbsp;Report</span
-                        >
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
-                          alt="Down Arrow"
-                        />
-                        <div class="parainsideatag">
-                          <p><a href="">Dashboard</a></p>
-                          <p><a href="">Activity</a></p>
-                          <p><a href="">Team pivot</a></p>
-                          <p><a href="">Economy</a></p>
-                          <p><a href="">Timesheet</a></p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="conBoxes">
-                      <div class="fb-aws-n-tx labelbox">
-                        <span fb-aws-span
-                          ><i class="fa-solid fa-folder"></i
-                          >&nbsp;&nbsp;&nbsp;Clients</span
-                        >
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
-                          alt="Down Arrow"
-                        />
-                      </div>
-                      <div class="parainsideatag">
-                        <p><a href="">Clients</a></p>
-                        <p><a href="">Invoices</a></p>
-                        <p><a href="">Uninvoiced</a></p>
-                      </div>
-                    </div>
-                    <div class="conBoxes">
-                      <div class="fb-aws-n-tx labelbox">
-                        <span fb-aws-span
-                          ><i class="fa-solid fa-users"></i
-                          >&nbsp;&nbsp;&nbsp;Team</span
-                        >
-                        <img
-                          id="team-arrow-img"
-                          src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
-                          alt="Down Arrow"
-                        />
-                      </div>
-                      <div class="parainsideatag">
-                        <p><a href="team.html">Team members</a></p>
-                        <p><a href="myteams.html">Teams</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="protrailexpire">
-                  <p>Pro trial expires in 13 days.</p>
-                  <a href="payment.html">Keep/leave the Pro</a>
-                </div>
-                <div style="background-color: #f8f9fa" id="helpApps">
-                  <div class="labelbox t-p-h-a">
-                    <a class="fb-aws-n-tx" href=""
-                      ><i class="fa-solid fa-circle-question"></i
-                      >&nbsp;&nbsp;&nbsp;Help</a
+            </div>
+            <div id="protrailexpire">
+              <p>Pro trial expires in 13 days.</p>
+              <a href="payment.html">Keep/leave the Pro</a>
+            </div>
+            <div style="background-color: #f8f9fa" id="helpApps">
+              <div class="labelbox t-p-h-a">
+                <a class="fb-aws-n-tx" href=""
+                  ><i class="fa-solid fa-circle-question"></i
+                  >&nbsp;&nbsp;&nbsp;Help</a
+                >
+              </div>
+
+              <div class="labelbox t-p-h-a">
+                <a class="fb-aws-n-tx" href=""
+                  ><i class="fa-solid fa-mobile-button"></i
+                  >&nbsp;&nbsp;&nbsp;Apps</a
+                >
+              </div>
+
+              <div class="labelbox">
+                <a class="fb-aws-n-tx" href=""
+                  ><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;What's
+                  new</a
+                >
+              </div>
+
+              <div class="mainaccordin">
+                <div class="conBoxes">
+                  <div class="m-p-z-f-p fb-aws-n-tx labelbox">
+                    <span class="fb-aws-span"
+                      ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<span
+                        onclick="profile()"
+                        id="name-profile"
+                        >Profile</span
+                      ></span
                     >
+                    <img
+                      id="p-n-img-log"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
                   </div>
-          
-                  <div class="labelbox t-p-h-a">
-                    <a class="fb-aws-n-tx" href=""
-                      ><i class="fa-solid fa-mobile-button"></i
-                      >&nbsp;&nbsp;&nbsp;Apps</a
-                    >
-                  </div>
-          
-                  <div class="labelbox">
-                    <a class="fb-aws-n-tx" href=""
-                      ><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;What's
-                      new</a
-                    >
-                  </div>
-          
-                  <div class="mainaccordin">
-                    <div class="conBoxes">
-                      <div class="m-p-z-f-p fb-aws-n-tx labelbox">
-                        <span class="fb-aws-span"
-                          ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<span
-                            onclick="profile()"
-                            id="name-profile"
-                            >Profile</span
-                          ></span
-                        >
-                        <img
-                          id="p-n-img-log"
-                          src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
-                          alt="Down Arrow"
-                        />
-                      </div>
-          
-                      <div class="parainsideatag">
-                        <p><a href="">Company</a></p>
-                        <p><a href="">Account Admin</a></p>
-                        <p><a href="">Subscription</a></p>
-                        <hr />
-                        <p onclick="profileSignout()"><a href="">Signout</a></p>
-                        <p><a href="">Profile</a></p>
-                      </div>
-                    </div>
+
+                  <div class="parainsideatag">
+                    <p><a href="">Company</a></p>
+                    <p><a href="">Account Admin</a></p>
+                    <p><a href="">Subscription</a></p>
+                    <hr />
+                    <p onclick="profileSignout()"><a href="">Signout</a></p>
+                    <p><a href="">Profile</a></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        <div id="rightside">
-            <div id="maindiv">
-                <h1>Add Team member</h1>
-                <form id="team_members">
-                    <label>NAME</label><br>
-                    <input type="text" id="name"><br><br>
-                    <label>EMAIL</label><br>
-                    <input type="text" id="email"><br><br>
-                    <div>
-                        <label for="">NOTES (PRIVATE TO ADMINS)</label>    
-                        <div id="toolbar"></div>
-                        <input id="notes" type="text" placeholder="Add notes ..." style="height: 130px;">
-                    </div>
-                    <br><br><div class="line-1"></div><br><br>
-        
-                    <label>ROLE</label>
-                    <div id="box">
-                       <div><input type="radio" id="accept1" name="role" value="Admin"></div>
-                        <div>
-                            <label for="Admin" style="font-size:17px;">Admin</label><br>
-                            <label for="Admin" style="font-size:15px; color:gray;">Can view and edit anything in group or workspace.</label><br>
-                        </div>
-                    </div>
-                    <div id="box">
-                        <div><input type="radio" id="accept2" name="role" value="Manager"></div>
-                        <div>
-                            <label for="Manager" style="font-size:17px;">Manager</label><br>
-                            <label for="Manager" style="font-size:15px; color:gray;">Can view and manage assigned projects. Cannot view other projects.</label><br>                  
-                        </div>
-                    </div>
-                    <div id="box">
-                        <div><input type="radio" id="accept3" name="role" value="Normal"></div>
-                        <div>
-                            <label for="Normal" style="font-size:17px;">Normal</label><br>
-                            <label for="Normal" style="font-size:15px; color:gray;">Can only track time on assigned projects/tasks.</label>
-                        </div>
-                    </div>
-                    <br><br><div class="line-1"></div><br><br>
-                    <div id="box2">
-                        <label style="font-size:25px;">Labor Rate</label><br>
-                        <p>Enter default hourly rate for the team member to calculate Labor cost. This rate can be further specified on individual projects.</p>
-                        <div id="box1">
-                            <div><p>INR</p></div>
-                            <div><input type="number" id="labor"><br><br></div>
-                        </div>
-                        <a href="" style="text-decoration:none; color:#5ca0ca;">How this works?</a>
-                    </div>
-                    <div id="box2" style="margin-bottom:-10px;">
-                        <label style="font-size:25px;">Billable Rate</label><br>
-                        <p>Enter default billable rate for the team member to calculate Billable cost. This rate can be further specified on individual projects.</p>
-                        <div id="box1">
-                            <div><p>INR</p></div>
-                            <div><input type="number" id="bill"><br><br></div>
-                        </div>
-                        <a href="" style="text-decoration:none; color:#5ca0ca;">How this works?</a>
-                    </div>
-                    <br><br><div class="line-1"></div><br><br>
-                    <div id="box3">
-                        <div><input type="checkbox" id="accept4" onclick="ischecked()"></div>
-                        <div>Automatically add this team member to all new projects</div>
-                    </div>
-                    <div id="box4">
-                        <p>Please note: Each team member you add, will be charged according to your subscription plan.</p>
-                    </div>
-                    <div id="box5">
-                        <button>Invite</button>
-                        <button><a href="team.html" style="text-decoration:none; color: white;">Cancel</a></button>
-                    </div>
-                </form>
-            </div>
         </div>
+      </div>
+      <div id="rightside">
+        <div id="maindiv">
+          <h1>Add Team member</h1>
+          <form id="team_members">
+            <label>NAME</label><br />
+            <input type="text" id="name" /><br /><br />
+            <label>EMAIL</label><br />
+            <input type="text" id="email" /><br /><br />
+            <div>
+              <label for="">NOTES (PRIVATE TO ADMINS)</label>
+              <div id="toolbar"></div>
+              <input
+                id="notes"
+                type="text"
+                placeholder="Add notes ..."
+                style="height: 130px"
+              />
+            </div>
+            <br /><br />
+            <div class="line-1"></div>
+            <br /><br />
+
+            <label>ROLE</label>
+            <div id="box">
+              <div>
+                <input type="radio" id="accept1" name="role" value="Admin" />
+              </div>
+              <div>
+                <label for="Admin" style="font-size: 17px">Admin</label><br />
+                <label for="Admin" style="font-size: 15px; color: gray"
+                  >Can view and edit anything in group or workspace.</label
+                ><br />
+              </div>
+            </div>
+            <div id="box">
+              <div>
+                <input type="radio" id="accept2" name="role" value="Manager" />
+              </div>
+              <div>
+                <label for="Manager" style="font-size: 17px">Manager</label
+                ><br />
+                <label for="Manager" style="font-size: 15px; color: gray"
+                  >Can view and manage assigned projects. Cannot view other
+                  projects.</label
+                ><br />
+              </div>
+            </div>
+            <div id="box">
+              <div>
+                <input type="radio" id="accept3" name="role" value="Normal" />
+              </div>
+              <div>
+                <label for="Normal" style="font-size: 17px">Normal</label><br />
+                <label for="Normal" style="font-size: 15px; color: gray"
+                  >Can only track time on assigned projects/tasks.</label
+                >
+              </div>
+            </div>
+            <br /><br />
+            <div class="line-1"></div>
+            <br /><br />
+            <div id="box2">
+              <label style="font-size: 25px">Labor Rate</label><br />
+              <p>
+                Enter default hourly rate for the team member to calculate Labor
+                cost. This rate can be further specified on individual projects.
+              </p>
+              <div id="box1">
+                <div><p>INR</p></div>
+                <div><input type="number" id="labor" /><br /><br /></div>
+              </div>
+              <a href="" style="text-decoration: none; color: #5ca0ca"
+                >How this works?</a
+              >
+            </div>
+            <div id="box2" style="margin-bottom: -10px">
+              <label style="font-size: 25px">Billable Rate</label><br />
+              <p>
+                Enter default billable rate for the team member to calculate
+                Billable cost. This rate can be further specified on individual
+                projects.
+              </p>
+              <div id="box1">
+                <div><p>INR</p></div>
+                <div><input type="number" id="bill" /><br /><br /></div>
+              </div>
+              <a href="" style="text-decoration: none; color: #5ca0ca"
+                >How this works?</a
+              >
+            </div>
+            <br /><br />
+            <div class="line-1"></div>
+            <br /><br />
+            <div id="box3">
+              <div>
+                <input type="checkbox" id="accept4" onclick="ischecked()" />
+              </div>
+              <div>Automatically add this team member to all new projects</div>
+            </div>
+            <div id="box4">
+              <p>
+                Please note: Each team member you add, will be charged according
+                to your subscription plan.
+              </p>
+            </div>
+            <div id="box5">
+              <button>Invite</button>
+              <button>
+                <a href="team.html" style="text-decoration: none; color: white"
+                  >Cancel</a
+                >
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <script src="/add_members.js"></script>

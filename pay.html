@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        img{
-            margin-left: 38%;
-        }
-        h1{
-            margin-left: 44%;
-        }
-        button{
-            margin-left: 45%;
-            width: 200px;
-            height: 50px;
-            font-size: 25px;
-            cursor: pointer;
-            border-radius: 5px;
-            border: 1px solid #208fe4;
-            background-color: #c3eaff;
-        }
+      img {
+        margin-left: 38%;
+      }
+      h1 {
+        margin-left: 44%;
+      }
+      button {
+        margin-left: 45%;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #208fe4;
+        background-color: #c3eaff;
+      }
     </style>
-</head>
-<body>
-    <img src="https://c.tenor.com/xnZaQ3O98dMAAAAC/thinking-processing.gif" id="pay_img">
+  </head>
+  <body>
+    <img
+      src="https://c.tenor.com/xnZaQ3O98dMAAAAC/thinking-processing.gif"
+      id="pay_img"
+    />
     <h1 id="text">payment processing ...</h1>
 
     <button onclick="back()">Go Back</button>
-</body>
+  </body>
 </html>
 <script>
-    let back = () => {
-        window.location.href = "homepage.html";
-    }
- 
-    let bankserver = () => {
-        return true;
-    }
+  let back = () => {
+    window.location.href = "homep.html";
+  };
 
-    let payment_promise = new Promise(function (resolve, reject) {
-        let pin = bankserver();
+  let bankserver = () => {
+    return true;
+  };
+
+  let payment_promise = new Promise(function (resolve, reject) {
+    let pin = bankserver();
 
     setTimeout(function () {
-        if(pin) {
-            resolve("Payment succesfull");
-        } else {
-            reject("try again");
-        }
-        }, 2000);
-    });
+      if (pin) {
+        resolve("Payment succesfull");
+      } else {
+        reject("try again");
+      }
+    }, 2000);
+  });
 
-    let image = document.getElementById("pay_img");
-    let caption = document.getElementById("text");
+  let image = document.getElementById("pay_img");
+  let caption = document.getElementById("text");
 
-    payment_promise.then(function(res){
-        caption.innerText = res;
-        caption.style.color = "green";
-        image.src = "https://c.tenor.com/xVfFIHxAzW4AAAAC/success.gif";
-    });
+  payment_promise.then(function (res) {
+    caption.innerText = res;
+    caption.style.color = "green";
+    image.src = "https://c.tenor.com/xVfFIHxAzW4AAAAC/success.gif";
+  });
 
-    payment_promise.catch(function(rej){
-        caption.innerText = res;
-        caption.style.color = "red";
-        image.src = "https://c.tenor.com/flmQIupAKBkAAAAC/steven-he-failure.gif";
-    });
+  payment_promise.catch(function (rej) {
+    caption.innerText = res;
+    caption.style.color = "red";
+    image.src = "https://c.tenor.com/flmQIupAKBkAAAAC/steven-he-failure.gif";
+  });
 
-
-// console.log(payment_promise);
-
-
+  // console.log(payment_promise);
 </script>
-

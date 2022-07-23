@@ -21,3 +21,7 @@ form_1.addEventListener("submit", function () {
   body.innerHTML = null;
   body.innerHTML = fetchForm();
 });
+
+// let createNC = () => {
+//   window.location.href = "../login.html";
+// };

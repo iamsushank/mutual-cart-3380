@@ -18,7 +18,7 @@
     width: 45%;
     margin: auto;
     /* border: 1px solid; */
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 100px;
@@ -265,6 +265,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 .mainaccordin .conBoxes.active .parainsideatag{
 height: auto;
+background-color: #f8f9fa;
 
 }
 

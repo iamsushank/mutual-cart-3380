@@ -422,7 +422,7 @@ function fetchForm() {
           <!-- create new company button -->
           <div id="signup-p1-btn">
             <button id="next_button" onclick="createNC()">
-              Create New Company
+              <a href="../login.html">Create New Company</a>
             </button>
           </div>
 
