@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="icon"
+      href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
+      type="image/x-icon"
+    />
+
+<link rel="stylesheet" href="./client.css">
+    <script src="https://kit.fontawesome.com/9b8a849ac5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="mode">
+    <div id="sidebar"></div>
+    <div>
+    <div id="start"> <h1>Clients</h1> <a href="new.html"><button id="client_add" ><p >+New Client</p></button></a></div>
+
+    <div><div><input type="text" placeholder="Search by Client name "> 
+        <div class="dropdown">
+          <button class="dropbtn">
+            Search</button>
+          <div class="dropdown-content">
+            <a href="#">ALL</a>
+            <a href="#">Archeived</a>
+            <a href="#">Active</a>
+          </div>
+   
+</div>
+<table>
+    <tr>
+        <td id="nameinfo"><p>NAME <i class="fa-solid fa-arrow-up"></i></p></td>
+        <td id="contactinfo"> <p> CONTACT PERSON </p></td>
+        <td id="emailinfo"><p>
+            CONTACT DETAIL</p></td>
+            <td id="active_info"><p>
+                STATUS<i class="fa-solid fa-arrow-up"></i> </p></td>
+                <td id="actioninfo"><p>
+                    ACTION </p></td>
+      </tr>
+    </table>
+
+
+     
+     <hr>
+<table id="datacollect"></table>
+</div>
+</div>
+</body>
+</html>
+<script src="client.js"></script>

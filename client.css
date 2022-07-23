@@ -1,0 +1,132 @@
+
+    #start{
+        font-size: 20px;
+        display: flex;
+        height:50px;
+        /* //background-color: aqua; */
+        /* //margin-left: -400px; */
+        justify-content: space-between;
+    }
+
+    h1{
+        margin-top:10px;
+        margin-left:20px
+    }
+    input{
+        border-radius: 5px;
+        margin-top:10px;
+        width:250px;
+        font-size: 15px;
+        height:35px;
+        border: 2px solid rgb(212, 208, 208);
+        margin-left:20px;
+        color:rgb(212, 208, 208)
+    }
+#nameinfo{
+width:780px;
+
+
+border:1 px solid black
+}
+#contactinfo{
+width:190px;
+
+border:1 px solid black
+}
+#emailinfo{
+    
+width:300px;
+border:1 px solid black
+}
+#active_info{
+    padding-left: 50px;
+width:200px;
+border:1 px solid black
+}
+#actioninfo{
+    margin-left: 50px;
+    width:200px;
+border:1 px solid black
+}
+
+    #client_add{
+        margin-top: 30px;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: cornflowerblue;
+        color:white;
+        width:150px;
+        height:30px;
+        border:0px;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .dropbtn {
+  width:100px;
+  color: cornflowerblue;
+  border:1px solid  rgb(212, 208, 208);
+  height:35px;
+  font-size: 16px;
+  
+}
+#datacollectji{
+    display: flex;
+}
+#namediv{
+ margin-left: 20px; 
+width:680px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+img{
+    width: 50%;
+}
+#material{
+    display:flex;
+    margin-bottom: -20px;
+}
+#mode{
+    display:flex
+}
+#sidebar{
+    width:14rem;
+    height:auto;
+    border:1px solid red
+}
+select{
+    width:30px;
+    margin-left: 2px;
+    border: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(138, 170, 228);
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+ .dropdown-content a:hover {background-color: #ddd;}  
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:rgb(138,170,228)};
