@@ -88,7 +88,7 @@ function sorting() {
             //Window.location.reload()
             console.log(arr)
             localStorage.setItem("dataclient", JSON.stringify(arr))
-            // Window.location.reload();
+            Window.location.reload();
             getData(arr);
 }
 

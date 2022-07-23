@@ -9,18 +9,22 @@
       href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./Sidebar/sidebar.css">
 </head>
 <style>
     #heading1{
         
+        margin-top: -10px;
         font-size: 45px;
         font-family: sans-serif;
         color: black;
         font-weight: 200;
     }
     .new_client{
+       /* // margin-top: -20px; */
+        /* background-color: aqua; */
         width:450px;
-        margin:auto
+        margin-left: 350px;
     }
     p{
         font-size: 12px;
@@ -60,15 +64,168 @@ width:220px;
 border-radius: 5px;
 
     }
+    #formji{
+
+margin-top:-30px
+    }
     #tax{
         
         display:flex;
         justify-content: space-between;
     }
+    #mode{
+        display:flex
+    }
 </style>
 <body> 
+
+<div id="mode">
+    <div id="sidebar"><div id="sideBar">
+        <div id="sidebarBox">
+          <div id="img-fr-sb">
+            <img
+              id="logo-sq"
+              src="https://icon-library.com/images/256-256-ed559f9ab4ee6cec08ffde71c58a68af-grid.png"
+              alt=""
+            />
+            <img
+              src="https://app.myhours.com/assets/myhours_app_logo_icon.svg"
+              alt=""
+            />
+          </div>
+          <div style="background-color: #f8f9fa" id="to-scroll">
+            <div id="accmainbox">
+              <div class="mainaccordin">
+                <div class="conBoxes">
+                  <div class="labelbox t-p-h-a">
+                    <a class="fb-aws-n-tx" href=""
+                      ><i class="fa-solid fa-stopwatch"></i> &nbsp;&nbsp;
+                      Track</a
+                    >
+                  </div>
+                  <div class="labelbox t-p-h-a">
+                    <a class="fb-aws-n-tx" href="./projects.html"
+                      ><i class="fa-solid fa-briefcase"></i
+                      >&nbsp;&nbsp;&nbsp;Project</a
+                    >
+                  </div>
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-chart-column"></i
+                      >&nbsp;&nbsp;&nbsp;Report</span
+                    >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                    <div class="parainsideatag">
+                      <p><a href="">Dashboard</a></p>
+                      <p><a href="">Activity</a></p>
+                      <p><a href="">Team pivot</a></p>
+                      <p><a href="">Economy</a></p>
+                      <p><a href="">Timesheet</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="conBoxes">
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-folder"></i
+                      >&nbsp;&nbsp;&nbsp;Clients</span
+                    >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                  </div>
+                  <div class="parainsideatag">
+                    <p><a href="./client.html">Clients</a></p>
+                    <p><a href="">Invoices</a></p>
+                    <p><a href="">Uninvoiced</a></p>
+                  </div>
+                </div>
+                <div class="conBoxes">
+                  <div class="fb-aws-n-tx labelbox">
+                    <span fb-aws-span
+                      ><i class="fa-solid fa-users"></i
+                      >&nbsp;&nbsp;&nbsp;Team</span
+                    >
+                    <img
+                      id="team-arrow-img"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                  </div>
+                  <div class="parainsideatag">
+                    <p><a href="./team.html">Team members</a></p>
+                    <p><a href="./team.html">Teams</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="protrailexpire">
+              <p>Pro trial expires in 13 days.</p>
+              <a href="">Keep/leave the Pro</a>
+            </div>
+            <div style="background-color: #f8f9fa" id="helpApps">
+              <div class="labelbox t-p-h-a">
+                <a class="fb-aws-n-tx" href=""
+                  ><i class="fa-solid fa-circle-question"></i
+                  >&nbsp;&nbsp;&nbsp;Help</a
+                >
+              </div>
+      
+              <div class="labelbox t-p-h-a">
+                <a class="fb-aws-n-tx" href="/Apps/Apps.html"
+                  ><i class="fa-solid fa-mobile-button"></i
+                  >&nbsp;&nbsp;&nbsp;Apps</a
+                >
+              </div>
+      
+              <div class="labelbox">
+                <a class="fb-aws-n-tx" href="./whatnew.html"
+                  ><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;What's
+                  new</a
+                >
+              </div>
+      
+              <div class="mainaccordin">
+                <div class="conBoxes">
+                  <div class="m-p-z-f-p fb-aws-n-tx labelbox">
+                    <span class="fb-aws-span"
+                      ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;<span
+                        onclick="profile()"
+                        id="name-profile"
+                        >Profile</span
+                      ></span
+                    >
+                    <img
+                      id="p-n-img-log"
+                      src="https://cdn-icons-png.flaticon.com/512/25/25623.png"
+                      alt="Down Arrow"
+                    />
+                  </div>
+      
+                  <div class="parainsideatag">
+                    <p><a href="">Company</a></p>
+                    <p><a href="">Account Admin</a></p>
+                    <p><a href="">Subscription</a></p>
+                    <hr />
+                    <p onclick="profileSignout()"><a href="">Signout</a></p>
+                    <p><a href="">Profile</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+      <div>
+
     <div class="new_client">
+       
     <p id="heading1">New Client</p>
+    <form action="" id="formji">
     <p>NAME</p>
     <input type="text" id="name">
     <p>CONTACT PERSON</p>
@@ -89,6 +246,8 @@ border-radius: 5px;
     <p>TAX NUMBER</p>
     <input type="text">
     <div><button id="button1" onclick="savadata()">SAVE</button> <a href="client.html"> <button id="button2" >CANCEL</button></a></div>
+</div>
+</form>
 </div>
 </body>
 </html>
