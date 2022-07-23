@@ -99,6 +99,9 @@ img{
 #mode{
     display:flex
 }
+#client{
+    margin-left:40px
+}
 #sidebar{
     width:14rem;
     height:auto;

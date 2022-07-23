@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/footer.css">
+    <style>
+        #mainnavbar{
+            width: 100%;
+        }
+        #main_footer{
+            width: 100%;
+        }
+        div{
+            width: 80%;
+            margin: auto;
+            font-family: "inter", sans-serif;
+            font-size: 22px;
+            color: rgb(87, 87, 87);
+
+        }
+
+        img{
+            width: 100%;
+            height: 50%;
+        }
+        h3{
+            color:#375d75;
+            text-align:center;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainnavbar"></div>
+    <div>
+        <p style="text-align:center; color:#375d75; font-size: 50px;">Get to know My Hours</p>   
+            <p>My Hours makes it easy for your team to stay on top of their work hours and helps you identify profitable projects with powerful reports. Customizable hourly ratings (per project, team member or task) and budgets are ideal for teams that need a flexible time tracker.</p>
+            <ul>
+                <li>Track time on <strong>unlimited projects, tasks, clients and team members </strong></li>
+                <li>Generate <strong>custom reports</strong> that impress clients and bosses</li>
+                <li>Set <strong> billing methods</strong> for different projects</li>
+                <li><strong>Sync your data</strong> with more than a 1000 tools</li>
+                <li>Free <strong>Android and iPhone</strong> apps</li>
+            </ul>
+            <h3>See How Billing works</h3>
+            <img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/60c3106b6d15b4476d545c47_Project%20billing.png" alt="">
+            <h3>See How Profitability works</h3>
+            <img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fc0abc58f82d80e265e384c_HP-1-1-p-1080.png" alt="">
+            <h3>See How Time tracking works</h3>
+            <img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/60bf3077bb6a616ad92cd4ed_Timesheet-time-tracking-min.png" alt="">
+            <h3>See How attendance works</h3>
+            <img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fcf3931c0333ceb6c77082e_Absence%20activity%20report%20scr-p-800.png" alt="">
+            <h3>See How clients Reporting works</h3>
+            <img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/60bf65cc9f5961be23d938e9_Time%20report%20-%20Detailed%20activity%20-%20min.png" alt="">
+
+
+    </div>
+    <div id="main-footer">  <div>
+</body>
+</html>
+<script type="module">
+    import navbar from "../header.js"
+    document.getElementById('mainnavbar').innerHTML=navbar();
+    import footer from "./footer.js"
+   document.getElementById('main-footer').innerHTML=footer();
+</script>

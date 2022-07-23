@@ -145,20 +145,6 @@ label{
 }
 
 
-
-/* *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-} */
-/* #body-cont{
-    width: 100%;
-    display: flex;
-} */
-/* #right-cont{
-    border: 1px solid red;
-    width: 100%;
-} */
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
@@ -169,7 +155,7 @@ html { font-family: 'Inter', sans-serif; }
     height: auto;
     background-color: #f8f9fa;
 }
-/* //////////////////////////////////////////// */
+
 
 
 #img-fr-sb{
@@ -205,13 +191,7 @@ html { font-family: 'Inter', sans-serif; }
     overflow: auto;
     background-color: #f8f9fa;
 }
-/* #sidebarBox>img{
-    width: 100%;
-    display: block;
-    margin: auto;
-    height: 30px;
-    padding: 25px 0px;
-} */
+
 #sidebarBox>h2{
     text-align: center;
     font-size: 2em;
@@ -290,14 +270,11 @@ height: auto;
     color: #375d75;
     font-size: 85%;
 }
-.accmainbox{
-    /* background-color: #50f5d9; */
-}
+
 .mainaccordin{
 /* height: auto; */
 display: block;
 
-    /* background-color: #50f5d9; */
 }
 #protrailexpire{
     /* height: 150px; */

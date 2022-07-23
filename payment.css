@@ -1,6 +1,6 @@
 #parent{
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
 }
@@ -151,4 +151,381 @@ input{
     background-color: #a6ddff;
     border:#8ccff9;
     cursor: pointer;
+}
+
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+/* #body-cont{
+    width: 100%;
+    display: flex;
+} */
+/* #right-cont{
+    border: 1px solid red;
+    width: 100%;
+} */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+#sideBar{
+    width: 14rem;
+    height: auto;
+    background-color: #f8f9fa;
+}
+/* //////////////////////////////////////////// */
+
+
+#img-fr-sb{
+    height: 615px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 11.3% 60%;
+    gap: 6%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    /* margin: auto; */
+    /* margin-top: 60px; */
+}
+#img-fr-sb> img{
+    width: 100%;
+}
+#img-fr-sb{
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    width: 100%;
+    height: 68.16px;
+}
+#to-scroll{
+    height: 550px;
+    overflow: auto;
+    background-color: #f8f9fa;
+}
+/* #sidebarBox>img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 30px;
+    padding: 25px 0px;
+} */
+#sidebarBox>h2{
+    text-align: center;
+    font-size: 2em;
+    color: #375d75;
+    margin-bottom: 25px;
+}
+#sidebarBox{
+    box-sizing: border-box;
+}
+#accmainbox{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    
+    background-color: #f8f9fa;
+}
+.mainaccordin{
+    width: 100%;
+    background-color: #f8f9fa;
+}
+.mainaccordin .conBoxes{
+    position: relative;
+    margin: 10px 5px;
+    background-color: #f8f9fa;
+}
+.mainaccordin, .conBoxes, .labelbox{
+    position: relative;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: black;
+    
+    background-color: #f8f9fa;
+}
+
+.mainaccordin .conBoxes .parainsideatag{
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    margin-left: 25px;
+}
+.mainaccordin .conBoxes.active .parainsideatag{
+height: auto;
+
+}
+
+.fb-aws-n-tx{
+    color: #375d75;
+    text-decoration: none;
+}
+.t-p-h-a{
+    margin-bottom: 6.5px;
+}
+
+.labelbox>img{
+    width:10px;
+    height: 10px;
+}
+.labelbox{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.parainsideatag>p{
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #f8f9fa;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.parainsideatag>p>a{
+    text-decoration: none;
+    color: #375d75;
+    font-size: 85%;
+}
+
+.mainaccordin{
+display: block;
+}
+
+#protrailexpire{
+    /* height: 150px; */
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #dceefa;
+    color: #375d75;
+    margin-bottom: 0.5rem
+}
+#protrailexpire>p{
+    
+    padding-bottom: 0.25rem;
+}
+#protrailexpire>a{
+    width: 100%;
+    font-weight: 600;
+    font-size: 18.5px;
+    text-decoration: none;
+    color: #375d75;
+}
+#protrailexpire>a:hover{
+    text-decoration: 1px underline;
+}
+#helpApps{
+    margin-left: 10px;
+}
+#helpApps>p>a{
+    
+    color: #536d69;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+.labelbox>span+img{
+    margin-left: 4rem;
+}
+#team-arrow-img{
+    margin-left: 4.4rem;
+}
+#p-n-img-log{
+    margin-left: 0.5rem;
+}
+.m-p-z-f-p{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+#sideBar{
+    width: 14rem;
+    height: auto;
+    background-color: #f8f9fa;
+}
+
+
+
+#img-fr-sb{
+    height: 615px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 11.3% 60%;
+    gap: 6%;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    /* margin: auto; */
+    /* margin-top: 60px; */
+}
+#img-fr-sb> img{
+    width: 100%;
+}
+#img-fr-sb{
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    width: 100%;
+    height: 68.16px;
+}
+#to-scroll{
+    height: 550px;
+    overflow: auto;
+    background-color: #f8f9fa;
+}
+
+#sidebarBox>h2{
+    text-align: center;
+    font-size: 2em;
+    color: #375d75;
+    margin-bottom: 25px;
+}
+#sidebarBox{
+    box-sizing: border-box;
+}
+#accmainbox{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    
+    background-color: #f8f9fa;
+}
+.mainaccordin{
+    width: 100%;
+    background-color: #f8f9fa;
+}
+.mainaccordin .conBoxes{
+    position: relative;
+    margin: 10px 5px;
+    background-color: #f8f9fa;
+}
+.mainaccordin, .conBoxes, .labelbox{
+    position: relative;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: black;
+    
+    background-color: #f8f9fa;
+}
+
+.mainaccordin .conBoxes .parainsideatag{
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    margin-left: 25px;
+}
+.mainaccordin .conBoxes.active .parainsideatag{
+height: auto;
+
+}
+
+.fb-aws-n-tx{
+    color: #375d75;
+    text-decoration: none;
+}
+.t-p-h-a{
+    margin-bottom: 6.5px;
+}
+
+.labelbox>img{
+    width:10px;
+    height: 10px;
+}
+.labelbox{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.parainsideatag>p{
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #f8f9fa;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.parainsideatag>p>a{
+    text-decoration: none;
+    color: #375d75;
+    font-size: 85%;
+}
+.mainaccordin{
+/* height: auto; */
+display: block;
+
+    /* background-color: #50f5d9; */
+}
+#protrailexpire{
+    /* height: 150px; */
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #dceefa;
+    color: #375d75;
+    margin-bottom: 0.5rem
+}
+#protrailexpire>p{
+    
+    padding-bottom: 0.25rem;
+}
+#protrailexpire>a{
+    width: 100%;
+    font-weight: 600;
+    font-size: 18.5px;
+    text-decoration: none;
+    color: #375d75;
+}
+#protrailexpire>a:hover{
+    text-decoration: 1px underline;
+}
+#helpApps{
+    margin-left: 10px;
+}
+#helpApps>p>a{
+    
+    color: #536d69;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+.labelbox>span+img{
+    margin-left: 4rem;
+}
+#team-arrow-img{
+    margin-left: 4.4rem;
+}
+#p-n-img-log{
+    margin-left: 0.5rem;
+}
+.m-p-z-f-p{
+    padding-left: 0;
+    padding-right: 0;
 }
