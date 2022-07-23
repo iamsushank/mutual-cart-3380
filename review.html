@@ -9,6 +9,8 @@
       href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="/footer.css">
     <link rel="stylesheet" href="./review.css">
 </head>
 <style>
@@ -17,7 +19,7 @@
 <body>
 <!-- 
 
-    //<''''''''''''''''''navbar...............................> --> --> -->
+    //<''''''''''''''''''navbar...............................> --> 
     <div id="navbar"></div>
     
     <div> <p   class="heading-1">What users say about us </p></div>
@@ -78,9 +80,13 @@
 ////<------------------------------------footer----------------------> 
 
 
-<div id="header">   Add footer here</div>
+<div id="main-footer">  </div>
     </body>
 </html>
 <script src="./review.js"></script>
-
-
+<script type="module">
+import navbar from "./header.js"
+document.getElementById('navbar').innerHTML=navbar();
+import footer from "./footer.js"
+document.getElementById('main-footer').innerHTML=footer();
+</script>

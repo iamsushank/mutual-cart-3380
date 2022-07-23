@@ -109,7 +109,8 @@ html { font-family: 'Inter', sans-serif; }
 }
 .mainaccordin .conBoxes.active .parainsideatag{
 height: auto;
-
+    
+background-color: #f8f9fa;
 }
 
 .fb-aws-n-tx{
@@ -141,6 +142,8 @@ height: auto;
     text-decoration: none;
     color: #375d75;
     font-size: 85%;
+    
+    background-color: #f8f9fa;
 }
 .accmainbox{
     /* background-color: #50f5d9; */
