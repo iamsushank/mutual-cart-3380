@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/homepage.css">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="/homep.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/footer.css">
 </head>
 <body>
     <div id="mainnavbar"></div>
     <div id="body">
         <div style="width:90%; margin:auto"><p id="heading"><strong>Organize</strong> projects, <strong>Track</strong> time and <strong>Report</strong> your work</p></div>
         <p id="subhead">Coordinate projects and tasks. Track your work hours and create awesome-looking reports for clients. <strong>All-in-one free time tracking software.</strong></p>
-        <button id="btn1"><a href="#">Get Started - It's Free</a></button>  
+        <button id="btn1"><a href="signup.html">Get Started - It's Free</a></button>  
         <div style="width:90%; margin:auto; margin-top: 40px;"><img src="https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fd337b26121202b5bfb96d7_OriginalSize(1)-p-1080.png" alt=""></div>
         <p style="font-size: 30px; margin-top: 80px;">Trusted by more than <strong>100.000 businesses</strong> worldwide</p> 
         <div id="block1"> 
@@ -65,30 +65,30 @@
             <div>
                 <h2>Billing</h2>
                 <h3>We need to bill our clients with flexible hourly rates.</h3>
-                <a href="#" id="a2">Here's how...</a>
+                <a href="extra.html" id="a2">Here's how...</a>
             </div>
             <div>
                 <h2>Profitability</h2>
                 <h3>We would like to calculate the profitability of our projects.</h3>
-                <a href="#" id="a2">Here's how...</a>
+                <a href="extra.html" id="a2">Here's how...</a>
             </div>
             <div>
                 <h2>Time tracking</h2>
                 <h3>We want to track time on projects and tasks.</h3>
-                <a href="#" id="a2">Here's how...</a>
+                <a href="extra.html" id="a2">Here's how...</a>
             </div>
             <div>
                 <h2>Attedance</h2>
                 <h3>We need to track employee attendance/absence and tasks.</h3>
-                <a href="#" id="a2">Here's how...</a>
+                <a href="extra.html" id="a2">Here's how...</a>
             </div>
             <div>
                 <h2>Client Reporting</h2>
                 <h3>I need to report the time spent to clients or invoice them.</h3>
-                <a href="#" id="a2">Here's how...</a>
+                <a href="extra.html" id="a2">Here's how...</a>
             </div>
             <div>
-                <h2 style="margin-top: 60px;"><a href="#" id="a3">Find more use cases</a> &#8594</h2>
+                <h2 style="margin-top: 60px;"><a href="extra.html" id="a3">Find more use cases</a> &#8594</h2>
             </div>
         </div>
         <h1 id="head">My Hours has changed the way our customers work</h1>
@@ -122,29 +122,28 @@
                 <h3>- Kristen B., Bussines Owner</h3>
             </div>
         </div>
-        <h2 style="color:#2775a9; font-size: 27px; margin-bottom: 100px;"><a href="review.html" id="a3">Read more reviews</a> &#8594</h2>
+        <h2 style="color:#2775a9; font-size: 27px; margin-bottom: 100px;"><a href="/my hours/review.html" id="a3">Read more reviews</a> &#8594</h2>
         <h1 id="head">Have questions? We're here</h1>
         <div style="width: 68%; margin: auto;"><p style="font-size: 22px;">It's always nice to have someone to talk to when facing new software. Get in touch and we'll try our best to help you out.</p></div>
         <div id="block 8" style="margin-bottom: 100px">
-            <a href="#" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 EMAIL & LIVE CHAT</a>
-            <a href="#" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 TRAINING FOR TEAMS</a>
-            <a href="#" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 KNOWLEDGE BASE</a>
+            <a href="supportpage.html" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 EMAIL & LIVE CHAT</a>
+            <a href="supportpage.html" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 TRAINING FOR TEAMS</a>
+            <a href="supportpage.html" id="a3" style="margin-right: 20px; font-weight: bold;">&#10003 KNOWLEDGE BASE</a>
         </div>
         <div id="block9">
             <div>
                 <div style="margin: auto; width:60%"><h1>Waste no more time, jump right in!</h1></div>
-                <button id="btn1"><a href="#">Get Started - It's Free</a></button>  
+                <button id="btn1"><a href="signup.html">Get Started - It's Free</a></button>  
                 <p>My Hours is Free to use for teams of any size.<a style="color:black; text-decoration: underline;" href="">Pro paid plan</a> comes with additional features like invoicing, admin controls and priority support.</p>
             </div>
             <div>
                 <p style="font-size:35px; margin-top: 30px; margin-bottom: 35px;">Need more info? Get a product demo.</p>
-                <button id="btn2"><a href="#" style="color: black;">Talk to our Team</a></button>
+                <button id="btn2"><a href="supportpage.html" style="color: black;">Talk to our Team</a></button>
                 <p>Teams of 6+ are welcome to book a personalized demo to see how My Hours works in detail.</p>
             </div>
-        </div>
-        <div></div>       
+        </div>     
     </div>
-    <div id="footer"> </div>
+    <div id="main-footer">  <div>
     
              
     
@@ -153,7 +152,7 @@
 <script type="module">
       import navbar from "../header.js"
       document.getElementById('mainnavbar').innerHTML=navbar();
-      import footer from "../footer.js"
-      document.getElementById('footer').innerHTML=footer();
+      import footer from "./footer.js"
+      document.getElementById('main-footer').innerHTML=footer();
 </script>
 

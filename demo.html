@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+      *{
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+        }
+        button{
+          padding: 5px 15px;
+          /* background-color: red; */
+          border: 1px solid transparent;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        }
+        button:nth-child(5){
+          padding: 5px 30px;
+          background-color: red;
+          border: 1px solid transparent;
+          border-radius: 5px;
+          margin-bottom: 20px;
+        }
+      
+
+        #products{
+          width:60%;
+          margin:auto;
+          
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+            text-align: center;
+
+        }
+        #products>div>img{
+            width:100%;
+        }
+         h1{
+            margin:20px;
+            text-align: center;
+        } 
+        #cart-section{
+          width:30%;
+          margin-left: 500px;
+          margin-bottom: 50px;
+          margin-top: 50px;
+          height: 250px;
+          /* border: 1px solid red; */
+        }
+       
+        input{
+          width:20%;
+        }
+        #cart-section{
+          font-weight: bold;
+        }
+        #cart-section > button{
+          background-color:  
+#666666;
+color:white;
+        }
+        #cart-section > button:last-child{
+          display: block;
+      
+          margin-top: 30px;
+         
+         
+        }
+
+        #car{
+          display: flex;
+        }
+        #dis{
+          display: flex;
+        }
+        #fin{
+          display: flex;
+        }
+    
+      
+     
+</style>
+</head>
+<body>
+   
+
+    <div id="cart-section">
+      <p>Apply a PROMOCODE</p>
+      <input id="promo" type="text" placeholder="Promocode">
+      <button id="apply">Apply</button>
+     
+    <div id="car"><p >Cart Total :</p>
+      <p id="cartTotal"></p></div>
+  
+      <div id="dis">  <p>Discount :</p>
+      <p id="discount"></p></div>
+   
+      <div id="fin"> <p >Final Price :</p>
+      <p id="final"></p></div>
+      
+    
+     
+      <button id="checkout">Proceed to Checkout</button>
+
+    </div>
+    <div id="products">
+        <!-- append data here -->
+       
+           </div>
+</body>
+</html>
+<script>
+  
+  let counter= 1
+  
+  let h = document.querySelector('#cartTotal');
+    let cartLS=JSON.parse(localStorage.getItem("cart"))  || [];
+
+    let  productcont= document.getElementById('products')
+    let totalPrice=0;
+    let price=0;
+    function displayProducts(productData){
+    productcont.innerHTML="";
+    totalPrice=0;
+    // price=0;
+   productData.forEach(function(element){
+
+   
+      let product=document.createElement('div');
+     
+      let image=document.createElement('img');
+         image.src=element.img;
+      let name=document.createElement('p');
+      name.innerText=element.name;
+      let catagory=document.createElement('p');
+      catagory.innerText=element.catagory;
+      let price=document.createElement('p');
+         price.innerText= +element.price;
+     
+    // price=element.price;
+    //  h.innerText="Cart total is " +  totalPrice
+      
+     
+      // (+element.price) * (+number.value);
+      
+      let quantitydiv=document.createElement("div");
+    
+        let quantity=document.createElement("p");
+        quantity.innerText="Quantity";
+     
+        let  quantitydis=document.createElement("p");
+   let pri= quantitydis.innerText= counter;
+ 
+        let button1=document.createElement("button");
+        button1.innerText="+";
+        button1.addEventListener("click",function(){
+          counter++;
+            quantitydis.innerText=counter;
+     price.innerText= +element.price * (+quantitydis.innerText)
+              h.innerText=  +price.innerText
+        })
+        let button2=document.createElement("button");
+        button2.innerText="-";
+        button2.addEventListener("click",function(){
+          counter--;
+           quantitydis.innerText=counter;
+          price.innerText= +element.price * (+quantitydis.innerText)
+          totalPrice+= +element.price 
+           h.innerText=+price.innerText;
+        })
+     
+           h.innerText= +price.innerText;
+
+      let addToCart=document.createElement('button');
+      addToCart.innerText="Delete";
+      addToCart.addEventListener("click",function(){
+          Delete(element.productID);
+          window.location.reload()
+      })
+          quantitydiv.append(quantity,quantitydis,button1,button2)
+        product.append(image,name,price,quantitydiv,addToCart)
+      productcont.append(product)
+   }) 
+}
+
+displayProducts(cartLS);
+
+function Delete(id){
+  
+    let deleted= cartLS.filter(function(el){
+        return el.productID != id;
+    })
+    cartLS=deleted;
+    localStorage.setItem("cart", JSON.stringify(cartLS))
+    displayProducts(cartLS);
+
+
+}
+
+ let check=document.querySelector("#checkout");
+ check.addEventListener("click",function(){
+  window.location.href="paymentpage.html"
+ })
+
+
+
+
+let carttotal= document.querySelector('#cartTotal');
+ let promo=document.querySelector('#promo');
+  let final=document.querySelector('#final');
+  let discount=document.querySelector('#discount')
+ document.querySelector('#apply').addEventListener("click",function(){
+    if(promo.value=="masai30"){
+      final.innerText= ((+carttotal.innerText) * (0.7)).toFixed(2)
+      discount.innerText= ((+carttotal.innerText) * (0.3)).toFixed(2)
+     
+    }
+    else{
+      final.innerText= (+carttotal.innerText);
+      discount.innerText="No Discount";
+      alert("Invalid Code")
+    }
+    
+    
+  
+
+  
+ })
+
+
+</script>

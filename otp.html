@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 30%;
+            height: 150px;
+            margin: auto;
+            /* border: 1px solid gray; */
+            text-align: center;
+            margin-top: 150px;
+            padding: 30px;
+            padding-bottom: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+            background-color: #f6f7f8;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        input{
+            width: 280px;
+            height: 25px;
+        }
+        
+        ::placeholder{
+            font-size: 17px;
+        }
+
+        button{
+            width: 90px;
+            padding: 6px;
+            font-size: 15px;
+            border: 1px solid rgb(101, 202, 232);
+            background-color: rgb(131, 226, 247);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>Please Enter the OTP sent on your mail</p>
+        <input type="number" id="otp" placeholder="Enter otp here">
+        <button onclick="submit()">Submit</button>   
+    </div>
+</body>
+</html>
+<script>
+    let submit = () => {        
+        let otp = document.getElementById("otp").value;
+        if(otp === "1234"){
+            window .location.href = "pay.html";
+        } else {
+            alert("Please enter correct otp");
+        }
+    }
+</script>
