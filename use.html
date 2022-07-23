@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./use.css">
     <link rel="stylesheet" href="./header.css">
-    <!-- //<link rel="stylesheet" href="./footer.css"> -->
     <link rel="stylesheet" href="/footer.css">
 </head>
 <style>
@@ -15,14 +14,14 @@
 <body>
 <!-- <..........................navbar.......................> -->
 
- <div id="navbar"></div>
+ <div id="navbar"></div> 
 
 <!-- <.....................heade section.....................> -->
 
     <div> <p   class="heading-1">Use cases </p></div>
     <div><h2 class="heading-2">& how My Hours solves problems</h2></div>
     <div class="heading-3">From tracking time, to reporting and invoicing your clients, My Hours is there for you the whole time.</div>
- <a href="#"><button id="button_start" onclick="home()">Get Started -It's Free </button>  </a>
+ <a href="#"><button id="button_start" onclick="homejii()">Get Started -It's Free </button>  </a>
 
 
 
@@ -193,21 +192,14 @@
 <!-- <-------------------footer section--------------------> 
 
 
-<div id="main-footer"></div>
+ <div id=main-footer>Add footer here</div> 
 
 </body>
 </html>
-<script src="./use.js"></script>
-<script type="module">
-    import navbar from "./header.js" 
-    document.getElementById("navbar").innerHTML=navbar()
-    
+<script src="./karishmascript/use.js"></script>
+<script type="module" >
+    import navbar from "./header.js"
+    document.getElementById('navbar').innerHTML=navbar();
     import footer from "./footer.js"
-   document.getElementById('main-footer').innerHTML=footer();
-
-    // import footer from "./footer.js" 
-    // document.getElementById("footer").innerHTML=footer()
-    
-    
-   
-</script>
+    document.getElementById('main-footer').innerHTML=footer();
+ </script>
