@@ -23,8 +23,7 @@ let userinfoas = JSON.parse(localStorage.getItem("userDetails"));
 // setTimeout(() => {
 let mainaccordin = document.getElementsByClassName("conBoxes");
 
-for (i = 0; i < mainaccordin.length; i+
-    +) {
+for (i = 0; i < mainaccordin.length; i++) {
   mainaccordin[i].addEventListener("click", function () {
     this.classList.toggle("active");
     //   this.style.color ="blue"|| "black"
