@@ -7,10 +7,11 @@
     <link
       rel="icon"
       href="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b5f28d17-3a80-4bf3-aa0c-82ca5cdcccf2.png?w=100&q=50"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="/footer.css">
+      type="image/x-icon">
+      <link rel="stylesheet" href="./header.css">
+      <!-- //<link rel="stylesheet" href="./footer.css"> -->
+      <link rel="stylesheet" href="/footer.css">
+
     <link rel="stylesheet" href="./review.css">
 </head>
 <style>
@@ -80,13 +81,16 @@
 ////<------------------------------------footer----------------------> 
 
 
-<div id="main-footer">  </div>
+<div id="main-footer">   </div>
     </body>
 </html>
 <script src="./review.js"></script>
 <script type="module">
-import navbar from "./header.js"
-document.getElementById('navbar').innerHTML=navbar();
-import footer from "./footer.js"
-document.getElementById('main-footer').innerHTML=footer();
+    import navbar from "./header.js" 
+    document.getElementById("navbar").innerHTML=navbar()
+    
+    import footer from "./footer.js"
+   document.getElementById('main-footer').innerHTML=footer();
 </script>
+
+
