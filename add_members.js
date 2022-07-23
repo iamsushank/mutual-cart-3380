@@ -1,7 +1,7 @@
 let form = document.querySelector("#team_members");
 let userdata = JSON.parse(localStorage.getItem("userdata")) || [];
 
-form.addEventListener("submit", () => {
+form.addEventListener("submit", (event) => {
     event.preventDefault();
     let data = {
         name: document.querySelector("#name").value,

@@ -175,6 +175,14 @@ hr{
 .cb2{
     width: 12px;
     height: 12px;
+<<<<<<< HEAD
+    margin-right: 20px;
+}
+.cb2:checked{
+    background-color: #3e9fdc;
+    cursor: '\f062';
+}
+=======
     /* margin-right: 20px; */
 }
 .cb2:checked{
@@ -182,3 +190,4 @@ hr{
 }
 
 
+>>>>>>> main
