@@ -140,3 +140,15 @@ input{
     height: 35px;
     margin-bottom: 20px ;
 }
+
+.newdiv{
+    width: 250px;
+    display: flex;
+}
+.newdiv > button{
+    padding: 3px 10px;
+    font-size: 15px;
+    background-color: #a6ddff;
+    border:#8ccff9;
+    cursor: pointer;
+}

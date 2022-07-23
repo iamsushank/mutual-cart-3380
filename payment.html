@@ -438,7 +438,7 @@
                     </div>
 
                     <label>CREDIT CARD NUMBER</label><br>
-                    <input type="text" id="atm_email"><br><br>
+                    <input type="number" id="atm_no" placeholder="Enter 16 digit card number"><br><br>
 
                     <div class="card3">
                         <div>
@@ -451,22 +451,18 @@
                         </div>
                         <div>
                             <label>CVV</label><br>
-                            <input type="number" id="cvv" placeholder="ex. 123">
+                            <input type="password" id="cvv" placeholder="ex. 123">
                         </div>
                     </div>
 
                     <h2 style="font-weight:lighter">Payment plan</h2> 
 
                     <div id="card4">
-                        <button id="btn3">Annualy</button>
-                        <button id="btn4" onclick="changecolor4(event)">Monthly</button>
+                        <button id="btn3" onclick="changeprice2(event)">Anually</button>
+                        <button id="btn4" onclick="changeprice3(event)">Monthly</button>
                     </div>
 
                     <div onclick="show_coupon(event)" id="text"><a href="" style="text-decoration:none; color:#66a7cf">I have a coupon code</a></div>
-                    <div>
-                    <!-- <label for="">DISCOUNT COUPON/REFERAL CODE</label>
-                        <input type="text" id="coupon"> -->
-                    </div>  
 
 
                     <table>
