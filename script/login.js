@@ -5,7 +5,7 @@ let signIn = (e) => {
   let ip_em = document.getElementById("ip_em").value;
   let ip_ps = document.getElementById("ip_ps").value;
   if (userDetails.email === ip_em && userDetails.password === ip_ps) {
-    window.location.href = "";
+    window.location.href = "../track.html";
   } else {
     alert("Incorrect email or password");
   }
