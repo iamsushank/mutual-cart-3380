@@ -40,3 +40,7 @@ website![image](https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fd37c8
 **Track Page**
 - Once user logged in you will be re-directed to Track page where you can track your time. 
 ![App Screenshot](https://i.postimg.cc/MKHpwchq/Web-capture-28-9-2022-0552-silver-sfogliatella-0c9664-netlify-app.jpg)
+
+**Profile Page**
+- Once user logged in you can chekck your Profile details here. 
+![App Screenshot](https://i.postimg.cc/v8cKdfQQ/Web-capture-28-9-2022-192-silver-sfogliatella-0c9664-netlify-app.jpg)
