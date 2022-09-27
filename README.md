@@ -36,3 +36,7 @@ website![image](https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fd37c8
 **Signin Page**
 - This is the Signin Page 
 ![App Screenshot](https://i.postimg.cc/0jg0vRNq/Web-capture-28-9-2022-0518-silver-sfogliatella-0c9664-netlify-app.jpg)
+
+**Track Page**
+- Once user logged in you will be re-directed to Track page where you can track your time. 
+![App Screenshot](https://i.postimg.cc/MKHpwchq/Web-capture-28-9-2022-0552-silver-sfogliatella-0c9664-netlify-app.jpg)
