@@ -24,7 +24,10 @@ website![image](https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fd37c8
 - Netlify ([Check our site here](https://silver-sfogliatella-0c9664.netlify.app/))
 
 ## Screenshots
-**Navbar Section**
-![App Screenshot](https://i.postimg.cc/TPjFy9Zm/Web-capture-28-9-2022-02856-silver-sfogliatella-0c9664-netlify-app.jpg)
+
+**Home Page**
+- This is the landing page 
+![App Screenshot](https://i.postimg.cc/v8pWxsbR/Web-capture-28-9-2022-03855-silver-sfogliatella-0c9664-netlify-app.jpg)
+
 
 
