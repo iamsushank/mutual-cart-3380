@@ -44,7 +44,7 @@ website![image](https://uploads-ssl.webflow.com/5c77a918ef19681741be7bca/5fd37c8
 **Profile Page**
 - Once user logged in you can chekck your Profile details here. 
 ![App Screenshot](https://i.postimg.cc/v8cKdfQQ/Web-capture-28-9-2022-192-silver-sfogliatella-0c9664-netlify-app.jpg)
-
+ 
 **New Client Page**
 - Once user logged in you can add new clients details here. 
 ![App Screenshot](https://i.postimg.cc/Wzzz5Srq/Web-capture-28-9-2022-11759-silver-sfogliatella-0c9664-netlify-app.jpg)
