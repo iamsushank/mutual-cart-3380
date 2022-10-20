@@ -3,6 +3,7 @@ function datechecker() {
   // console.log(typeof parseInt(jsdate.value));
   // console.log(parseInt(jsdate.value));
   // document.getElementById("1").innerHTML = jsdate.value;
+  
   let date = new Date();
   let year = date.getFullYear();
   let month = date.getMonth() + 1;
